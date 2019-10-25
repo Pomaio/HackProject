@@ -8,9 +8,13 @@
   margin: 0 auto;
 }
 
-.page__container {
+#page__container{
   background-image: url("../assets/gifs/star.gif");
-  background-position-x: 1px;
+  height: 300px;
+  width: 100vw;
+}
+
+.page__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

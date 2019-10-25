@@ -9,10 +9,11 @@ import {TestComponent} from './test/test.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule, MatFormFieldModule, MatInputModule, MatStepperModule} from '@angular/material';
 import {FormModule} from './test/form/form.module';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
-  declarations: [ProfileComponent, TestComponent, PageRoutingComponent],
+  declarations: [ProfileComponent, TestComponent, PageRoutingComponent, LandingComponent],
   imports: [
     CommonModule,
     PageRoutingModule,
