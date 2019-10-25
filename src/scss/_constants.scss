@@ -9,6 +9,8 @@
 }
 
 .page__container {
+  background-image: url("../assets/gifs/star.gif");
+  background-position-x: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
