@@ -8,7 +8,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 
-import { RoleBasedModule } from '@app/_helpers';
 
 @NgModule({
   declarations: [HeaderComponent],
@@ -18,7 +17,6 @@ import { RoleBasedModule } from '@app/_helpers';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    RoleBasedModule,
     RouterModule
   ],
   exports: [HeaderComponent]

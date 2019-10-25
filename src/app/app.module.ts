@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './pages/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material';
+import {MatButtonModule} from '@angular/material';
+import {PagesModule} from './pages/pages.module';
+import {HttpClientModule} from '@angular/common/http';
+import {PageRoutingModule} from './pages/page-routing/page-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    PagesModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule,
+    PageRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
