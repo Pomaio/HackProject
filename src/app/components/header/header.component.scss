@@ -1,0 +1,79 @@
+$header-background: #222329;
+$nav-text-color: white;
+
+.link-holder {
+  min-height: 40px;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  margin: 0 20px;
+  height: 40px;
+  cursor: pointer;
+  color: $nav-text-color;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.link-holder:hover {
+  background: linear-gradient(rgba(73, 108, 255, 0.0) 90%, #466cff 95%);
+  border-radius: 2px;
+}
+
+.link-holder__active {
+  background: linear-gradient(rgba(73, 108, 255, 0.0) 90%, #466cff 95%);
+  border-radius: 2px;
+}
+
+.login-btn__icon {
+  height: 30px;
+  width: 40px;
+  background-image: url("../../../assets/icons/login.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.login-btn__text {
+  color: $nav-text-color;
+  font-weight: 100;
+  padding-right: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  .menu-icon {
+    height: 30px;
+    width: 40px;
+    background-image: url("../../../assets/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48%;
+  }
+
+  .menu-text {
+    color: $nav-text-color;
+    font-weight: 100;
+    padding-right: 12px;
+  }
+}
+
+.header {
+  padding: 30px 89.5px 26px;
+  background-color: $header-background;
+}
+
+.nav {
+  display: flex;
+
+  &__logo {
+    width: 250px;
+    height: 52px;
+    background: url('../../../assets/icons/logo-education.svg');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,35 @@
+<header class="header">
+  <div class="app__container">
+    <nav class="nav flex-aijc">
+      <div [routerLink]="['/landing']" class="nav__item nav__logo unselectable disable-selection-btn"></div>
+
+      <div class="link-holder unselectable disable-selection-btn"
+           [routerLink]="['/home']"
+           routerLinkActive="link-holder__active">
+        Проекты
+      </div>
+
+      <span class="spacer"></span>
+      <button class="link-holder  button nav__button" *ngIf="authService.currentUser$ | async; else login"
+              mat-button
+              [matMenuTriggerFor]="menu">
+        <div class="menu">
+          <div class="menu-icon"></div>
+          <div class="menu-text">Меню</div>
+        </div>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/balance">Баланс</button>
+        <button mat-menu-item routerLink="/investment">Мои инвестиции</button>
+        <button mat-menu-item routerLink="/pre-orders">Мои предзаказы</button>
+        <button mat-menu-item (click)="onLogout()">Выход</button>
+      </mat-menu>
+      <ng-template #login>
+        <div class="link-holder unselectable disable-selection-btn" [routerLink]="['/login']">
+          <div class="login-btn__icon"></div>
+          <div class="login-btn__text">Войти</div>
+        </div>
+      </ng-template>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,20 @@
+.flex-jcc {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-aijc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--app-small-gap);
+}
