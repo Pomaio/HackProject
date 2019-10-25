@@ -8,14 +8,20 @@ import {MatButtonModule} from '@angular/material';
 import {PagesModule} from './pages/pages.module';
 import {HttpClientModule} from '@angular/common/http';
 import {PageRoutingModule} from './pages/page-routing/page-routing.module';
+import {PageRoutingComponent} from './pages/page-routing/page-routing.component';
+import {HeaderModule} from './components/header/header.module';
+import {FooterModule} from './components/footer/footer.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    PageRoutingComponent
   ],
   imports: [
     BrowserModule,
     PagesModule,
+    HeaderModule,
+    FooterModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,

@@ -9,12 +9,10 @@ import {FooterModule} from '../components/footer/footer.module';
 
 
 @NgModule({
-  declarations: [ProfileComponent, PageRoutingComponent],
+  declarations: [ProfileComponent],
   imports: [
     CommonModule,
     HeaderModule,
     FooterModule,
-  ],
-  exports: [PageRoutingComponent]
-})
+  ]})
 export class PagesModule { }
