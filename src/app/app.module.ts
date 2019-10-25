@@ -14,19 +14,17 @@ import {FooterModule} from './components/footer/footer.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PageRoutingComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    PagesModule,
     HeaderModule,
     FooterModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
     AppRoutingModule,
-    PageRoutingModule,
+    PagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
