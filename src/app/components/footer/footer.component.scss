@@ -1,0 +1,31 @@
+$footer-background: #222329;
+$nav-text-color: white;
+
+.footer {
+  width: 100vw;
+  padding: 30px 89.5px 26px;
+  background-color: $footer-background;
+
+  &__nav {
+    margin: var(--app-medium-gap) 0;
+  }
+
+  &__link {
+    cursor: pointer;
+    color: $nav-text-color;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    color: $nav-text-color;
+
+    &--link {
+      color: #3399ff;
+      cursor: pointer;
+    }
+  }
+}
+

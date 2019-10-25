@@ -1,0 +1,10 @@
+.module--header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.25rem;
+}
+
+.module-divider {
+  width: 100%;
+  height: var(--app-medium-gap);
+}

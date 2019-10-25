@@ -1,0 +1,22 @@
+:root {
+  --app-small-gap: 15px;
+  --app-medium-gap: 30px;
+}
+
+.app__container {
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1124px) {
+  .app__container {
+    padding: var(--app-medium-gap);
+  }
+}
