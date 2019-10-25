@@ -11,6 +11,7 @@ import {PageRoutingModule} from './pages/page-routing/page-routing.module';
 import {PageRoutingComponent} from './pages/page-routing/page-routing.component';
 import {HeaderModule} from './components/header/header.module';
 import {FooterModule} from './components/footer/footer.module';
+import {LoginModule} from './pages/login/login.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {FooterModule} from './components/footer/footer.module';
     BrowserModule,
     HeaderModule,
     FooterModule,
+    LoginModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,

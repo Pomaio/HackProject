@@ -68,11 +68,11 @@ $nav-text-color: white;
   display: flex;
 
   &__logo {
-    width: 204px;
+    width: 250px;
     height: 52px;
-    background: url('../../../assets/icons/LOGO_elevator_white.png');
+    background: url('../../../assets/icons/logo-education.svg');
     background-position: center;
-    background-size: cover;
+    background-size: 90%;
     background-repeat: no-repeat;
     cursor: pointer;
   }

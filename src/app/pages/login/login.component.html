@@ -1,0 +1,68 @@
+<div class="app__container flex-aijc">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <strong>Обычный пользователь</strong> - U: user P: user<br />
+        <strong>Администратор</strong> - U: admin P: admin
+      </mat-card-title>
+    </mat-card-header>
+  </mat-card>
+  <mat-card class="login">
+    <mat-card-header>
+      <mat-card-title class="ta-center">
+        Добро пожаловать в программу!<br />
+        Пожалуйста, авторизуйтесь:
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="login__form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+          <mat-label>Имя пользователя</mat-label>
+          <input
+            matInput
+            type="text"
+            formControlName="username"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+          />
+          <mat-error
+            *ngIf="submitted && f.username.errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f.username.errors.required">Username is required</div>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Пароль</mat-label>
+          <input
+            matInput
+            type="password"
+            formControlName="password"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+          />
+          <mat-error
+            *ngIf="submitted && f.password.errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f.password.errors.required">Password is required</div>
+          </mat-error>
+        </mat-form-field>
+        <button
+          mat-raised-button
+          color="primary"
+          [disabled]="loading"
+          class="login__button--accept"
+        >
+          <mat-icon *ngIf="loading">
+            <mat-spinner diameter="20"></mat-spinner>
+          </mat-icon>
+          Login
+        </button>
+        <mat-error *ngIf="error" class="login__error">
+          {{ error }}
+        </mat-error>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

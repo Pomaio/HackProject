@@ -1,0 +1,24 @@
+.app__container {
+  min-height: 100vh;
+  flex-direction: column;
+
+  &>*+* {
+    margin-top: calc(2 * var(--app-medium-gap));
+  }
+}
+
+.login {
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button--accept {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__error {
+    margin-top: var(--app-small-gap);
+  }
+}
