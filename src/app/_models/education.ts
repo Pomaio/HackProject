@@ -73,6 +73,7 @@ export interface Challenge {
 }
 
 export interface Excercise {
+  title: string;
   question: string;
   answers: string[];
   rightAnswer: string[];
