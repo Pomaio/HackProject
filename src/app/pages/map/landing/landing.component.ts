@@ -14,15 +14,15 @@ export class LandingComponent implements OnInit, OnDestroy {
   destroy$ = new Subject();
 
   ngOnInit() {
-    this.moveEvent$ = fromEvent(document.getElementById('page__container'), 'mousemove');
+    this.moveEvent$ = fromEvent(document, 'mousemove');
     this.moveEvent$.pipe(
       throttleTime(2),
       takeUntil(this.destroy$)
     ).subscribe((e) => {
-      this.countX += e.movementX / 5;
-      this.countY += e.movementY / 5;
-      document.getElementById('page__container').style.backgroundPositionX = `${this.countX}px`;
-      document.getElementById('page__container').style.backgroundPositionY = `${this.countY}px`;
+        this.countX += e.movementX / 15;
+        this.countY += e.movementY / 15;
+        document.getElementById('page__container').style.backgroundPositionX = `${this.countX}px`;
+        document.getElementById('page__container').style.backgroundPositionY = `${this.countY}px`;
     });
   }
 

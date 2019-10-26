@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { EducationNode, EducationLink } from 'src/app/_models';
+import {Component} from '@angular/core';
+import {EducationNode, EducationLink} from 'src/app/_models';
 import APP_CONFIG from 'src/app/app.config';
+import {MAP_DEFAULT} from '../../_data/map';
 
 @Component({
   selector: 'app-map',
@@ -12,24 +13,37 @@ export class MapComponent {
   links: EducationLink[] = [];
 
   constructor() {
+    const nodesTree = MAP_DEFAULT.nodes;
+    const linksTree = MAP_DEFAULT.links;
+
     const N = APP_CONFIG.N;
 
     const getIndex = number => number - 1;
 
     /** constructing the nodes array */
-    for (let i = 1; i <= N; i++) {
-      this.nodes.push(new EducationNode(i));
+    for (let i = 0; i < nodesTree.length; i++) {
+      this.nodes.push(new EducationNode(i, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].color));
     }
 
-    for (let i = 1; i <= N; i++) {
-      for (let m = 2; i * m <= N; m++) {
-        /** increasing connections toll on connecting nodes */
-        this.nodes[getIndex(i)].linkCount++;
-        this.nodes[getIndex(i * m)].linkCount++;
+    for (let i = 0; i < linksTree.length; i++) {
 
-        /** connecting the nodes before starting the simulation */
-        this.links.push(new EducationLink(i, i * m));
-      }
+      /** increasing connections toll on connecting nodes */
+      const sourceID = nodesTree.reduce((res, el, index) => {
+        if (el.name === linksTree[i].source) {
+          return index;
+        }
+        return res;
+      }, 0);
+      const targetID = nodesTree.reduce((res, el, index) => {
+        if (el.name === linksTree[i].target) {
+          return index;
+        }
+        return res;
+      }, 0);
+
+      /** connecting the nodes before starting the simulation */
+      this.links.push(new EducationLink(sourceID, targetID));
     }
+
   }
 }

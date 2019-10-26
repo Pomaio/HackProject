@@ -18,6 +18,11 @@
            routerLinkActive="link-holder__active">
         Карта
       </div>
+      <div class="link-holder unselectable disable-selection-btn"
+           [routerLink]="['/rate']"
+           routerLinkActive="link-holder__active">
+        Рейтинг
+      </div>
 
       <span class="spacer"></span>
       <button class="link-holder  button nav__button" *ngIf="authService.currentUser$ | async; else login"
