@@ -3,9 +3,9 @@ import { EducationLink, EducationNode } from '../_models/education';
 import * as d3 from 'd3';
 
 const FORCES = {
-  LINKS: 1 / 50,
-  COLLISION: 1,
-  CHARGE: -1
+  LINKS: 20 / 50,
+  COLLISION: 10,
+  CHARGE: -30
 };
 
 export class ForceDirectedGraph {

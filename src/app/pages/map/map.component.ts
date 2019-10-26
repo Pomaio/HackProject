@@ -21,19 +21,30 @@ export class MapComponent {
     const getIndex = number => number - 1;
 
     /** constructing the nodes array */
-    for (let i = 1; i <= N; i++) {
-      this.nodes.push(new EducationNode(nodesTree[i].id, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].color));
+    for (let i = 0; i < nodesTree.length; i++) {
+      console.log(nodesTree);
+      this.nodes.push(new EducationNode(i, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].color));
     }
 
-    for (let i = 1; i <= N; i++) {
-      for (let m = 2; i * m <= N; m++) {
-        /** increasing connections toll on connecting nodes */
-        this.nodes[getIndex(i)].linkCount++;
-        this.nodes[getIndex(i * m)].linkCount++;
+    for (let i = 0; i < linksTree.length; i++) {
 
-        /** connecting the nodes before starting the simulation */
-        this.links.push(new EducationLink(i, i * m));
-      }
+      /** increasing connections toll on connecting nodes */
+      const sourceID = nodesTree.reduce((res, el, index) => {
+        if (el.name === linksTree[i].source) {
+          return index;
+        }
+        return res;
+      }, 0);
+      const targetID = nodesTree.reduce((res, el, index) => {
+        if (el.name === linksTree[i].target) {
+          return index;
+        }
+        return res;
+      }, 0);
+
+      /** connecting the nodes before starting the simulation */
+      this.links.push(new EducationLink(sourceID, targetID));
     }
+
   }
 }
