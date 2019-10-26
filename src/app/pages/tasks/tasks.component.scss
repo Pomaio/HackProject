@@ -1,4 +1,4 @@
-$gutter: 20px;
+$gutter: 30px;
 
 $main-bg: #222329;
 :host{
@@ -7,6 +7,7 @@ $main-bg: #222329;
 }
 
 .section {
+  padding: 0 $gutter;
   margin-bottom: $gutter*2;
   &_about-you {
     display: flex;
@@ -35,3 +36,13 @@ $main-bg: #222329;
   }
 }
 
+mat-expansion-panel {
+  border: 1px solid rgba($main-bg, .1);
+  &-header {
+    font-size: 24px;
+  }
+}
+.mat-expansion-panel-content {
+  font-size: 20px;
+  line-height: 1.25;
+}

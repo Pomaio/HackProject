@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {ChallengeService} from 'src/app/_services/challenge.service';
-import {Challenge} from 'src/app/_models';
-import {ActivatedRoute, ParamMap, Router} from '@angular/router';
-import {Observable} from 'rxjs';
-import {switchMap} from 'rxjs/operators';
-import {TelegramBotService} from 'src/app/_services/telegram-bot.service';
-import {MAP_DEFAULT} from '../../_data/map';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ChallengeService } from 'src/app/_services/challenge.service';
+import { Challenge } from 'src/app/_models';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { TelegramBotService } from 'src/app/_services/telegram-bot.service';
+import { MAP_DEFAULT } from '../../_data/map';
 
 @Component({
   selector: 'app-test',
@@ -56,7 +56,7 @@ export class TestComponent implements OnInit {
         return el;
       }
       return res;
-    }, {}).result = this.testData.excersices.reduce((sum, el) => {
+    }, {} as any).result = this.testData.excersices.reduce((sum, el) => {
       if (el.rightAnswer === this.contactForm.value.hobbies[el.title]) {
         return sum += 10;
       }
