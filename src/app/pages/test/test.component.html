@@ -1,34 +1,28 @@
-<div class="test-name">{{testData.name}}</div>
+<div class="test-name">{{ testData.name }}</div>
 
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-
   <mat-horizontal-stepper formGroupName="hobbies" [linear]="isLinear" #stepper>
+    <mat-step *ngFor="let hobby of testData.excersices">
+      <ng-template matStepLabel>{{ hobby.title }}</ng-template>
+      <div class="example-h2">{{ hobby.question }}</div>
 
-      <mat-step *ngFor="let hobby of testData.excersices">
-        <ng-template matStepLabel>{{hobby.title}}</ng-template>
-        <div class="example-h2">{{hobby.question}}</div>
-
-        <mat-radio-group [formControlName]="hobby.title" required>
-          <div *ngFor="let checkpoint of hobby.answers">
-            <div style="height: 20px"></div>
-            <mat-radio-button class="example-margin" [value]="checkpoint">{{checkpoint}}</mat-radio-button>
-          </div>
-
-
-        </mat-radio-group>
-        <div class="action-button">
+      <mat-radio-group [formControlName]="hobby.title" required>
+        <div *ngFor="let checkpoint of hobby.answers">
+          <div style="height: 20px"></div>
+          <mat-radio-button class="example-margin" [value]="checkpoint">{{ checkpoint }}</mat-radio-button>
+        </div>
+      </mat-radio-group>
+      <!-- <div class="action-button">
           <button mat-button matStepperNext>Next</button>
-        </div>
-      </mat-step>
+        </div> -->
+    </mat-step>
 
-      <mat-step>
-        <ng-template matStepLabel>Done</ng-template>
-        Отправить на проверку?
-        <div class="action-button">
-          <button mat-button [disabled]="!contactForm.valid" color="primary" type="submit">Отправить</button>
-        </div>
-      </mat-step>
-
-
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      Отправить на проверку?
+      <div class="action-button">
+        <button mat-button [disabled]="!contactForm.valid" color="primary" type="submit">Отправить</button>
+      </div>
+    </mat-step>
   </mat-horizontal-stepper>
 </form>

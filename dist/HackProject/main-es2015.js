@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<header class=\"header\">\r\n  <div class=\"app__container\">\r\n    <nav class=\"nav flex-aijc\">\r\n      <div [routerLink]=\"['/landing']\" class=\"nav__item nav__logo unselectable disable-selection-btn\"></div>\r\n\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/profile']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Профиль\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/test']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Тесты\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/map']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Карта\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/rate']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Рейтинг\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/tasks']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Задачи\r\n      </div>\r\n\r\n      <span class=\"spacer\"></span>\r\n      <!-- <button\r\n        class=\"link-holder  button nav__button\"\r\n        *ngIf=\"authService.currentUser$ | async; else login\"\r\n        mat-button\r\n      > -->\r\n      <div\r\n        *ngIf=\"authService.currentUser$ | async; else login\"\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        (click)=\"onLogout()\"\r\n      >\r\n        <div class=\"login-btn__icon\"></div>\r\n        <div class=\"login-btn__text\">Выход</div>\r\n      </div>\r\n      <!-- </button> -->\r\n      <!-- <mat-menu #menu=\"matMenu\">\r\n        <button mat-menu-item routerLink=\"/balance\">Личный кабинет</button>\r\n        <button mat-menu-item routerLink=\"/investment\">Мои задачи</button>\r\n        <button mat-menu-item (click)=\"onLogout()\">Выход</button>\r\n      </mat-menu> -->\r\n      <ng-template #login>\r\n        <div class=\"link-holder unselectable disable-selection-btn\" [routerLink]=\"['/login']\">\r\n          <div class=\"login-btn__icon\"></div>\r\n          <div class=\"login-btn__text\">Войти</div>\r\n        </div>\r\n      </ng-template>\r\n    </nav>\r\n  </div>\r\n</header>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<header class=\"header\">\r\n  <div class=\"app__container\">\r\n    <nav class=\"nav flex-aijc\">\r\n      <div [routerLink]=\"['/landing']\" class=\"nav__item nav__logo unselectable disable-selection-btn\"></div>\r\n\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/profile']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Профиль\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/people']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Участники\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/map']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Карта\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/rate']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Рейтинг\r\n      </div>\r\n      <div\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        [routerLink]=\"['/tasks']\"\r\n        routerLinkActive=\"link-holder__active\"\r\n      >\r\n        Задачи\r\n      </div>\r\n\r\n      <span class=\"spacer\"></span>\r\n      <!-- <button\r\n        class=\"link-holder  button nav__button\"\r\n        *ngIf=\"authService.currentUser$ | async; else login\"\r\n        mat-button\r\n      > -->\r\n      <div\r\n        *ngIf=\"authService.currentUser$ | async; else login\"\r\n        class=\"link-holder unselectable disable-selection-btn\"\r\n        (click)=\"onLogout()\"\r\n      >\r\n        <div class=\"login-btn__icon\"></div>\r\n        <div class=\"login-btn__text\">Выход</div>\r\n      </div>\r\n      <!-- </button> -->\r\n      <!-- <mat-menu #menu=\"matMenu\">\r\n        <button mat-menu-item routerLink=\"/balance\">Личный кабинет</button>\r\n        <button mat-menu-item routerLink=\"/investment\">Мои задачи</button>\r\n        <button mat-menu-item (click)=\"onLogout()\">Выход</button>\r\n      </mat-menu> -->\r\n      <ng-template #login>\r\n        <div class=\"link-holder unselectable disable-selection-btn\" [routerLink]=\"['/login']\">\r\n          <div class=\"login-btn__icon\"></div>\r\n          <div class=\"login-btn__text\">Войти</div>\r\n        </div>\r\n      </ng-template>\r\n    </nav>\r\n  </div>\r\n</header>\r\n");
 
 /***/ }),
 
@@ -140,6 +140,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/people/landing/landing.component.html":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/people/landing/landing.component.html ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"page__container\"></div>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/people/people.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/people/people.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-landing></app-landing>\r\n<div class=\"container\">\r\n  <app-people-skills [nodes]=\"nodes\" [links]=\"links\"></app-people-skills>\r\n</div>\r\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/profile/profile.component.html":
 /*!********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/profile/profile.component.html ***!
@@ -175,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section section-skills\">\r\n  <div class=\"skills section-title\">Химия</div>\r\n  <mat-progress-bar mode=\"determinate\" value=\"30\"></mat-progress-bar>\r\n  <mat-expansion-panel *ngFor=\"let topic of topics\">\r\n    <mat-expansion-panel-header>\r\n      {{topic.title}}\r\n    </mat-expansion-panel-header>\r\n\r\n    <p>{{topic.description}}</p>\r\n\r\n    <mat-action-row>\r\n      <button mat-button>Click me</button>\r\n    </mat-action-row>\r\n  </mat-expansion-panel>\r\n</div>\r\n<div class=\"section section-skills\">\r\n  <div class=\"skills section-title\">Физика</div>\r\n  <mat-progress-bar mode=\"determinate\" value=\"50\"></mat-progress-bar>\r\n  <mat-expansion-panel *ngFor=\"let topic of topics\">\r\n    <mat-expansion-panel-header>\r\n      {{topic.title}}\r\n    </mat-expansion-panel-header>\r\n\r\n    <p>{{topic.description}}</p>\r\n\r\n    <mat-action-row>\r\n      <button mat-button>Click me</button>\r\n    </mat-action-row>\r\n  </mat-expansion-panel>\r\n</div>\r\n<div class=\"section section-skills\">\r\n  <div class=\"skills section-title\">Математика</div>\r\n  <mat-progress-bar mode=\"determinate\" value=\"70\"></mat-progress-bar>\r\n  <mat-expansion-panel *ngFor=\"let topic of topics\">\r\n    <mat-expansion-panel-header>\r\n      {{topic.title}}\r\n    </mat-expansion-panel-header>\r\n\r\n    <p>{{topic.description}}</p>\r\n\r\n    <mat-action-row>\r\n      <button mat-button>Click me</button>\r\n    </mat-action-row>\r\n  </mat-expansion-panel>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section section-skills\">\r\n  <div class=\"skills section-title\">Химия</div>\r\n  <mat-progress-bar mode=\"determinate\" value=\"30\"></mat-progress-bar>\r\n  <mat-expansion-panel *ngFor=\"let topic of topics1\">\r\n    <mat-expansion-panel-header>\r\n      {{topic.title}}\r\n    </mat-expansion-panel-header>\r\n\r\n    <p class=\"mat-expansion-panel-content\">{{topic.description}}</p>\r\n\r\n  </mat-expansion-panel>\r\n</div>\r\n<div class=\"section section-skills\">\r\n  <div class=\"skills section-title\">Физика</div>\r\n  <mat-progress-bar mode=\"determinate\" value=\"50\"></mat-progress-bar>\r\n  <mat-expansion-panel *ngFor=\"let topic of topics2\">\r\n    <mat-expansion-panel-header>\r\n      {{topic.title}}\r\n    </mat-expansion-panel-header>\r\n\r\n    <p class=\"mat-expansion-panel-content\">{{topic.description}}</p>\r\n\r\n  </mat-expansion-panel>\r\n</div>\r\n<div class=\"section section-skills\">\r\n  <div class=\"skills section-title\">Математика</div>\r\n  <mat-progress-bar mode=\"determinate\" value=\"70\"></mat-progress-bar>\r\n  <mat-expansion-panel *ngFor=\"let topic of topics3\">\r\n    <mat-expansion-panel-header>\r\n      {{topic.title}}\r\n    </mat-expansion-panel-header>\r\n\r\n    <p class=\"mat-expansion-panel-content\">{{topic.description}}</p>\r\n\r\n  </mat-expansion-panel>\r\n</div>");
 
 /***/ }),
 
@@ -188,7 +214,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"test-name\">{{testData.name}}</div>\r\n\r\n<form [formGroup]=\"contactForm\" (ngSubmit)=\"onSubmit()\">\r\n\r\n  <mat-horizontal-stepper formGroupName=\"hobbies\" [linear]=\"isLinear\" #stepper>\r\n\r\n      <mat-step *ngFor=\"let hobby of testData.excersices\">\r\n        <ng-template matStepLabel>{{hobby.title}}</ng-template>\r\n        <div class=\"example-h2\">{{hobby.question}}</div>\r\n\r\n        <mat-radio-group [formControlName]=\"hobby.title\" required>\r\n          <div *ngFor=\"let checkpoint of hobby.answers\">\r\n            <div style=\"height: 20px\"></div>\r\n            <mat-radio-button class=\"example-margin\" [value]=\"checkpoint\">{{checkpoint}}</mat-radio-button>\r\n          </div>\r\n\r\n\r\n        </mat-radio-group>\r\n        <div class=\"action-button\">\r\n          <button mat-button matStepperNext>Next</button>\r\n        </div>\r\n      </mat-step>\r\n\r\n      <mat-step>\r\n        <ng-template matStepLabel>Done</ng-template>\r\n        Отправить на проверку?\r\n        <div class=\"action-button\">\r\n          <button mat-button [disabled]=\"!contactForm.valid\" color=\"primary\" type=\"submit\">Отправить</button>\r\n        </div>\r\n      </mat-step>\r\n\r\n\r\n  </mat-horizontal-stepper>\r\n</form>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"test-name\">{{ testData.name }}</div>\r\n\r\n<form [formGroup]=\"contactForm\" (ngSubmit)=\"onSubmit()\">\r\n  <mat-horizontal-stepper formGroupName=\"hobbies\" [linear]=\"isLinear\" #stepper>\r\n    <mat-step *ngFor=\"let hobby of testData.excersices\">\r\n      <ng-template matStepLabel>{{ hobby.title }}</ng-template>\r\n      <div class=\"example-h2\">{{ hobby.question }}</div>\r\n\r\n      <mat-radio-group [formControlName]=\"hobby.title\" required>\r\n        <div *ngFor=\"let checkpoint of hobby.answers\">\r\n          <div style=\"height: 20px\"></div>\r\n          <mat-radio-button class=\"example-margin\" [value]=\"checkpoint\">{{ checkpoint }}</mat-radio-button>\r\n        </div>\r\n      </mat-radio-group>\r\n      <!-- <div class=\"action-button\">\r\n          <button mat-button matStepperNext>Next</button>\r\n        </div> -->\r\n    </mat-step>\r\n\r\n    <mat-step>\r\n      <ng-template matStepLabel>Done</ng-template>\r\n      Отправить на проверку?\r\n      <div class=\"action-button\">\r\n        <button mat-button [disabled]=\"!contactForm.valid\" color=\"primary\" type=\"submit\">Отправить</button>\r\n      </div>\r\n    </mat-step>\r\n  </mat-horizontal-stepper>\r\n</form>\r\n");
 
 /***/ }),
 
@@ -421,6 +447,56 @@ function __importDefault(mod) {
 
 /***/ }),
 
+/***/ "./src/app/_data/People_links.ts":
+/*!***************************************!*\
+  !*** ./src/app/_data/People_links.ts ***!
+  \***************************************/
+/*! exports provided: linksP */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "linksP", function() { return linksP; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+const linksP = [
+    {
+        source: 'Вова',
+        target: 'Егор'
+    },
+    {
+        source: 'Вова',
+        target: 'Гриша'
+    },
+    {
+        source: 'Вова',
+        target: 'Сеня'
+    },
+    {
+        source: 'Гриша',
+        target: 'Егор'
+    },
+    {
+        source: 'Гриша',
+        target: 'Женя'
+    },
+    {
+        source: 'Женя',
+        target: 'Сеня'
+    },
+    {
+        source: 'Вова',
+        target: 'Егор'
+    },
+    {
+        source: 'Вова',
+        target: 'Егор'
+    },
+];
+
+
+/***/ }),
+
 /***/ "./src/app/_data/challenge.ts":
 /*!************************************!*\
   !*** ./src/app/_data/challenge.ts ***!
@@ -456,7 +532,7 @@ const FAKE_CHALLENGES = [
                 question: 'Вы любите литературу?',
                 answers: ['Да', 'Нет'],
                 rightAnswer: 'Да'
-            },
+            }
         ],
         solved: false
     },
@@ -467,40 +543,78 @@ const FAKE_CHALLENGES = [
         solved: false,
         excersices: [
             {
-                title: 'Задание 1 из 6',
+                title: 'Задание 1 из 10',
                 question: 'Велосипедист проехал 36 км за 3 часа. С какой скоростью ехал велосипедист?',
                 answers: ['12 км/мин', '12 м/мин', '12 км/ч', '12 км'],
                 rightAnswer: '12 км/ч'
             },
             {
-                title: 'Задание 2 из 6',
+                title: 'Задание 2 из 10',
                 question: 'Автомобиль едет со скоростью 50 км/ч. Какое расстояние автомобиль проедет за 6 часов?',
                 answers: ['300 км/ч', '300  м/мин ', '300  км', '300  м'],
                 rightAnswer: '300  км'
             },
             {
-                title: 'Задание 3 из 6',
+                title: 'Задание 3 из 10',
                 question: 'Поезд едет со скоростью 70 км/ч. За какое время он проедет 280 км?',
                 answers: ['За 4 мин', 'За 4 м/мин ', 'За 4 км/ч', 'За 4 ч'],
                 rightAnswer: 'За 4 ч'
             },
             {
-                title: 'Задание 4 из 6',
+                title: 'Задание 4 из 10',
                 question: 'Велосипедист проехал 40 км за 4 часа. С какой скоростью ехал велосипедист? Найди верное решение.',
                 answers: ['4 ч ⋅ 40 км', '40 км – 4 ч', '40 км + 4 ч', '40 км : 4 ч'],
                 rightAnswer: '40 км : 4 ч'
             },
             {
-                title: 'Задание 5 из 6',
+                title: 'Задание 5 из 10',
                 question: 'Автомобиль едет со скоростью 80 км/ч. Какое расстояние автомобиль проедет за 5 часов? Найди верное решение.',
                 answers: ['80 км/ч + 5 ч', '80 км/ч : 5 ч', '80 км/ч ⋅ 5 ч'],
                 rightAnswer: '80 км/ч ⋅ 5 ч'
             },
             {
-                title: 'Задание 6 из 6',
+                title: 'Задание 6 из 10',
                 question: 'Поезд едет со скоростью 60 км/ч. За какое время он проедет 300 км? Найди верное решение.',
                 answers: ['300 км ⋅ 60 км/ч', '300 км – 60 км/ч', '300 км + 60 км/ч', '300 км : 60 км/ч'],
                 rightAnswer: '300 км : 60 км/ч'
+            },
+            {
+                title: 'Задание 7 из 10',
+                question: 'Велосипедист проехал 45 км за 3 часа. С какой скоростью ехал велосипедист? Найди верное решение.',
+                answers: [
+                    '45 км : 3 ч= 15 (км)',
+                    '45 км : 3 ч = 15 (км/ч)',
+                    '45 км : 3 ч = 15 (км/мин)',
+                    '45 км – 3 ч = 42 (км/ч)'
+                ],
+                rightAnswer: '45 км : 3 ч = 15 (км/ч)'
+            },
+            {
+                title: 'Задание 8 из 10',
+                question: 'Автомобиль едет со скоростью 60 км/ч. Какое расстояние автомобиль проедет за 4 часа? Найди верное решение.',
+                answers: ['60 км/ч + 4 ч = 64 (км)', '60  км/ч ⋅ 4 ч = 240 (км)', '60  км/ч ⋅ 4 ч = 240 (км/ч)'],
+                rightAnswer: '60  км/ч ⋅ 4 ч = 240 (км)'
+            },
+            {
+                title: 'Задание 9 из 10',
+                question: 'Поезд едет со скоростью 70 км/ч. За какое время он проедет 280 км? Найди верное решение.',
+                answers: [
+                    '280 км - 70 км/ч = 210 (ч)',
+                    '280 км : 70 км/ч = 4 (км/ч)',
+                    '280 км : 70 км/ч = 4 (ч)',
+                    '280 км : 70 км/ч = 4 (мин)'
+                ],
+                rightAnswer: '280 км : 70 км/ч = 4 (ч)'
+            },
+            {
+                title: 'Задание 10 из 10',
+                question: 'Выбери задачу на встречное движение.\
+          1. Из Красноярска в разные стороны выехали 2 автобуса. Скорость первого автобуса 60 км/ч, скорость второго – 80 км/ч. На каком расстоянии друг от друга будут автобусы через 3 часа?\
+          2. Расстояние между Абаканом и Красноярском 420 км. Из Абакана в Красноярск выехал автобус со скоростью 70 км/ч. С такой же скоростью из Красноярска в Абакан выехал другой автобус. Через какое время они встретятся?\
+          3. Из Красноярска в Абакан выехали два автобуса. Один ехал со скоростью 70 км/ч, а другой – 60 км/ч. На сколько часов быстрее доедет первый автобус, чем второй, если расстояние между городами примерно 420 км?\
+          4. От Абакана до Красноярска примерно 420 км. За какое время это расстояние проедет автомобиль, если будет двигаться со скоростью 70 км/ч?',
+                answers: ['4', '1', '3', '2'],
+                rightAnswer: '1'
             }
         ]
     },
@@ -1059,6 +1173,132 @@ const links = [
         target: 'Секреты органической химии'
     },
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/_data/people.ts":
+/*!*********************************!*\
+  !*** ./src/app/_data/people.ts ***!
+  \*********************************/
+/*! exports provided: PEOPLE_DEFAULT */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PEOPLE_DEFAULT", function() { return PEOPLE_DEFAULT; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _People_links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./People_links */ "./src/app/_data/People_links.ts");
+
+
+const font = 20;
+const max = { r: 100, fontSize: font, iamgeUrl: 'assets/icons/girl.svg', challengeId: 1 };
+const medium = { r: 70, fontSize: font, iamgeUrl: 'assets/icons/boy.svg', challengeId: 1 };
+const min = { r: 40, fontSize: font, iamgeUrl: 'assets/icons/boy.svg', challengeId: 1 };
+const PEOPLE_DEFAULT = {
+    nodes: [
+        {
+            name: 'Егор',
+            result: null,
+            r: 275,
+            fontSize: 20,
+            iamgeUrl: 'assets/icons/boy.svg',
+            challengeId: 1
+        },
+        Object.assign({ name: 'Вова' }, max, { challengeId: 2 }),
+        Object.assign({ name: 'Сеня' }, medium, { challengeId: 2 }),
+        Object.assign({ name: 'Гриша' }, max, { challengeId: 2 }),
+        Object.assign({ name: 'Женя' }, min, { challengeId: 2 }),
+    ],
+    linksP: _People_links__WEBPACK_IMPORTED_MODULE_1__["linksP"]
+};
+
+
+/***/ }),
+
+/***/ "./src/app/_helpers/2draggable.directive.ts":
+/*!**************************************************!*\
+  !*** ./src/app/_helpers/2draggable.directive.ts ***!
+  \**************************************************/
+/*! exports provided: DraggableDirective2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DraggableDirective2", function() { return DraggableDirective2; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_d3_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../_services/d3.service */ "./src/app/_services/d3.service.ts");
+
+
+
+let DraggableDirective2 = class DraggableDirective2 {
+    constructor(d3Service, _element) {
+        this.d3Service = d3Service;
+        this._element = _element;
+    }
+    ngOnInit() {
+        this.d3Service.applyDraggableBehaviour(this._element.nativeElement, this.draggableNode, this.draggableInGraph);
+    }
+};
+DraggableDirective2.ctorParameters = () => [
+    { type: _services_d3_service__WEBPACK_IMPORTED_MODULE_2__["D3Service"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('appDraggableNode2')
+], DraggableDirective2.prototype, "draggableNode", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('appDraggableInGraph2')
+], DraggableDirective2.prototype, "draggableInGraph", void 0);
+DraggableDirective2 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"])({
+        selector: '[appDraggableNode2]'
+    })
+], DraggableDirective2);
+
+
+
+/***/ }),
+
+/***/ "./src/app/_helpers/2zoomable.directive.ts":
+/*!*************************************************!*\
+  !*** ./src/app/_helpers/2zoomable.directive.ts ***!
+  \*************************************************/
+/*! exports provided: ZoomableDirective2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomableDirective2", function() { return ZoomableDirective2; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_d3_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../_services/d3.service */ "./src/app/_services/d3.service.ts");
+
+
+
+let ZoomableDirective2 = class ZoomableDirective2 {
+    constructor(d3Service, _element) {
+        this.d3Service = d3Service;
+        this._element = _element;
+    }
+    ngOnInit() {
+        this.d3Service.applyZoomableBehaviour(this.ZoomableOf2, this._element.nativeElement);
+    }
+};
+ZoomableDirective2.ctorParameters = () => [
+    { type: _services_d3_service__WEBPACK_IMPORTED_MODULE_2__["D3Service"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('appZoomableOf2')
+], ZoomableDirective2.prototype, "ZoomableOf2", void 0);
+ZoomableDirective2 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"])({
+        selector: '[appZoomableOf2]'
+    })
+], ZoomableDirective2);
+
 
 
 /***/ }),
@@ -2066,6 +2306,62 @@ TelegramBotService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/_services/tree-progress.service.ts":
+/*!****************************************************!*\
+  !*** ./src/app/_services/tree-progress.service.ts ***!
+  \****************************************************/
+/*! exports provided: TreeProgressService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TreeProgressService", function() { return TreeProgressService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! . */ "./src/app/_services/index.ts");
+
+
+
+let TreeProgressService = class TreeProgressService {
+    constructor(auth) {
+        this.auth = auth;
+    }
+    saveCurrentProgress(nodeId) {
+        if (this.auth.currentUserValue) {
+            const name = this.auth.currentUserValue.firstName;
+            const test = JSON.parse(localStorage.getItem(name));
+            const alreadyFinished = test ? test : [];
+            nodeId.forEach(item => {
+                if (!alreadyFinished.includes(item)) {
+                    alreadyFinished.push(item);
+                }
+            });
+            localStorage.setItem(name, JSON.stringify(alreadyFinished));
+        }
+    }
+    getCurrentProgress() {
+        if (this.auth.currentUserValue) {
+            const name = this.auth.currentUserValue.firstName;
+            const test = JSON.parse(localStorage.getItem(name));
+            const alreadyFinished = test ? test : [];
+            return alreadyFinished;
+        }
+        return [];
+    }
+};
+TreeProgressService.ctorParameters = () => [
+    { type: ___WEBPACK_IMPORTED_MODULE_2__["AuthenticationService"] }
+];
+TreeProgressService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], TreeProgressService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/_services/user.service.ts":
 /*!*******************************************!*\
   !*** ./src/app/_services/user.service.ts ***!
@@ -2308,10 +2604,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _components_header_header_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/header/header.module */ "./src/app/components/header/header.module.ts");
 /* harmony import */ var _components_footer_footer_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/footer/footer.module */ "./src/app/components/footer/footer.module.ts");
-/* harmony import */ var _components_map_skills_map_skills_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/map-skills/map-skills.module */ "./src/app/components/map-skills/map-skills.module.ts");
-/* harmony import */ var _pages_pages_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/pages.module */ "./src/app/pages/pages.module.ts");
-/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./_helpers */ "./src/app/_helpers/index.ts");
-
+/* harmony import */ var _pages_pages_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/pages.module */ "./src/app/pages/pages.module.ts");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./_helpers */ "./src/app/_helpers/index.ts");
 
 
 
@@ -2339,16 +2633,15 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"],
             _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"],
-            _components_map_skills_map_skills_module__WEBPACK_IMPORTED_MODULE_12__["MapSkillsModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
-            _pages_pages_module__WEBPACK_IMPORTED_MODULE_13__["PagesModule"]
+            _pages_pages_module__WEBPACK_IMPORTED_MODULE_12__["PagesModule"]
         ],
         providers: [
             { provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"], useValue: 'ru' },
-            { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _helpers__WEBPACK_IMPORTED_MODULE_14__["JwtInterceptor"], multi: true },
-            { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _helpers__WEBPACK_IMPORTED_MODULE_14__["ErrorInterceptor"], multi: true },
+            { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _helpers__WEBPACK_IMPORTED_MODULE_13__["JwtInterceptor"], multi: true },
+            { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _helpers__WEBPACK_IMPORTED_MODULE_13__["ErrorInterceptor"], multi: true },
             // provider used to create fake backend
-            _helpers__WEBPACK_IMPORTED_MODULE_14__["fakeBackendProvider"]
+            _helpers__WEBPACK_IMPORTED_MODULE_13__["fakeBackendProvider"]
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
     })
@@ -2742,10 +3035,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm2015/tooltip.js");
 /* harmony import */ var _map_skills_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./map-skills.component */ "./src/app/components/map-skills/map-skills.component.ts");
-/* harmony import */ var src_app_helpers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/_helpers */ "./src/app/_helpers/index.ts");
-/* harmony import */ var _visuals_node_visual_node_visual_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./visuals/node-visual/node-visual.component */ "./src/app/components/map-skills/visuals/node-visual/node-visual.component.ts");
-/* harmony import */ var _visuals_link_visual_link_visual_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./visuals/link-visual/link-visual.component */ "./src/app/components/map-skills/visuals/link-visual/link-visual.component.ts");
-/* harmony import */ var src_app_services__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/app/_services */ "./src/app/_services/index.ts");
+/* harmony import */ var _visuals_node_visual_node_visual_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./visuals/node-visual/node-visual.component */ "./src/app/components/map-skills/visuals/node-visual/node-visual.component.ts");
+/* harmony import */ var _visuals_link_visual_link_visual_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./visuals/link-visual/link-visual.component */ "./src/app/components/map-skills/visuals/link-visual/link-visual.component.ts");
+/* harmony import */ var src_app_services__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/_services */ "./src/app/_services/index.ts");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../_helpers */ "./src/app/_helpers/index.ts");
 
 
 
@@ -2760,10 +3053,10 @@ let MapSkillsModule = class MapSkillsModule {
 };
 MapSkillsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_map_skills_component__WEBPACK_IMPORTED_MODULE_5__["MapSkillsComponent"], src_app_helpers__WEBPACK_IMPORTED_MODULE_6__["DraggableDirective"], src_app_helpers__WEBPACK_IMPORTED_MODULE_6__["ZoomableDirective"], _visuals_node_visual_node_visual_component__WEBPACK_IMPORTED_MODULE_7__["NodeVisualComponent"], _visuals_link_visual_link_visual_component__WEBPACK_IMPORTED_MODULE_8__["LinkVisualComponent"]],
+        declarations: [_map_skills_component__WEBPACK_IMPORTED_MODULE_5__["MapSkillsComponent"], _helpers__WEBPACK_IMPORTED_MODULE_9__["DraggableDirective"], _helpers__WEBPACK_IMPORTED_MODULE_9__["ZoomableDirective"], _visuals_node_visual_node_visual_component__WEBPACK_IMPORTED_MODULE_6__["NodeVisualComponent"], _visuals_link_visual_link_visual_component__WEBPACK_IMPORTED_MODULE_7__["LinkVisualComponent"]],
         imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_4__["MatTooltipModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
         exports: [_map_skills_component__WEBPACK_IMPORTED_MODULE_5__["MapSkillsComponent"]],
-        providers: [src_app_services__WEBPACK_IMPORTED_MODULE_9__["D3Service"]]
+        providers: [src_app_services__WEBPACK_IMPORTED_MODULE_8__["D3Service"]]
     })
 ], MapSkillsModule);
 
@@ -2832,7 +3125,7 @@ LinkVisualComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".node {\n  cursor: pointer;\n  transition: stroke-width 0.1s ease-out, fill 0.1s ease-out, stroke 0.1s ease-out;\n}\n\n.node-name {\n  font-family: \"Lato\";\n  text-anchor: middle;\n  alignment-baseline: central;\n  font-weight: 300;\n  fill: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tYXAtc2tpbGxzL3Zpc3VhbHMvbm9kZS12aXN1YWwvQTpcXGVsaXRlXFxIYWNrUHJvamVjdC9zcmNcXGFwcFxcY29tcG9uZW50c1xcbWFwLXNraWxsc1xcdmlzdWFsc1xcbm9kZS12aXN1YWxcXG5vZGUtdmlzdWFsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL21hcC1za2lsbHMvdmlzdWFscy9ub2RlLXZpc3VhbC9ub2RlLXZpc3VhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7RUFDQSxnRkFBQTtBQ0NGOztBREtBO0VBQ0UsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLDJCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0FDRkYiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL21hcC1za2lsbHMvdmlzdWFscy9ub2RlLXZpc3VhbC9ub2RlLXZpc3VhbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ub2RlIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgdHJhbnNpdGlvbjogc3Ryb2tlLXdpZHRoIDAuMXMgZWFzZS1vdXQsIGZpbGwgMC4xcyBlYXNlLW91dCwgc3Ryb2tlIDAuMXMgZWFzZS1vdXQ7XHJcblxyXG4gIC8vIHN0cm9rZTogd2hpdGU7XHJcbiAgLy8gc3Ryb2tlLXdpZHRoOiAwLjI1O1xyXG59XHJcblxyXG4ubm9kZS1uYW1lIHtcclxuICBmb250LWZhbWlseTogJ0xhdG8nO1xyXG4gIHRleHQtYW5jaG9yOiBtaWRkbGU7XHJcbiAgYWxpZ25tZW50LWJhc2VsaW5lOiBjZW50cmFsO1xyXG4gIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgZmlsbDogd2hpdGU7XHJcbn1cclxuIiwiLm5vZGUge1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb246IHN0cm9rZS13aWR0aCAwLjFzIGVhc2Utb3V0LCBmaWxsIDAuMXMgZWFzZS1vdXQsIHN0cm9rZSAwLjFzIGVhc2Utb3V0O1xufVxuXG4ubm9kZS1uYW1lIHtcbiAgZm9udC1mYW1pbHk6IFwiTGF0b1wiO1xuICB0ZXh0LWFuY2hvcjogbWlkZGxlO1xuICBhbGlnbm1lbnQtYmFzZWxpbmU6IGNlbnRyYWw7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG4gIGZpbGw6IHdoaXRlO1xufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".node {\n  cursor: pointer;\n  transition: stroke-width 0.1s ease-out, fill 0.1s ease-out, stroke 0.1s ease-out;\n}\n\n.node--disabled {\n  opacity: 0.1;\n}\n\n.node-name {\n  font-family: \"Lato\";\n  text-anchor: middle;\n  alignment-baseline: central;\n  font-weight: 300;\n  fill: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tYXAtc2tpbGxzL3Zpc3VhbHMvbm9kZS12aXN1YWwvQTpcXGVsaXRlXFxIYWNrUHJvamVjdC9zcmNcXGFwcFxcY29tcG9uZW50c1xcbWFwLXNraWxsc1xcdmlzdWFsc1xcbm9kZS12aXN1YWxcXG5vZGUtdmlzdWFsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL21hcC1za2lsbHMvdmlzdWFscy9ub2RlLXZpc3VhbC9ub2RlLXZpc3VhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7RUFDQSxnRkFBQTtBQ0NGOztBREtBO0VBQ0UsWUFBQTtBQ0ZGOztBREtBO0VBQ0UsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLDJCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0FDRkYiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL21hcC1za2lsbHMvdmlzdWFscy9ub2RlLXZpc3VhbC9ub2RlLXZpc3VhbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ub2RlIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgdHJhbnNpdGlvbjogc3Ryb2tlLXdpZHRoIDAuMXMgZWFzZS1vdXQsIGZpbGwgMC4xcyBlYXNlLW91dCwgc3Ryb2tlIDAuMXMgZWFzZS1vdXQ7XHJcblxyXG4gIC8vIHN0cm9rZTogd2hpdGU7XHJcbiAgLy8gc3Ryb2tlLXdpZHRoOiAwLjI1O1xyXG59XHJcblxyXG4ubm9kZS0tZGlzYWJsZWQge1xyXG4gIG9wYWNpdHk6IDAuMTtcclxufVxyXG5cclxuLm5vZGUtbmFtZSB7XHJcbiAgZm9udC1mYW1pbHk6ICdMYXRvJztcclxuICB0ZXh0LWFuY2hvcjogbWlkZGxlO1xyXG4gIGFsaWdubWVudC1iYXNlbGluZTogY2VudHJhbDtcclxuICBmb250LXdlaWdodDogMzAwO1xyXG4gIGZpbGw6IHdoaXRlO1xyXG59XHJcbiIsIi5ub2RlIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0cmFuc2l0aW9uOiBzdHJva2Utd2lkdGggMC4xcyBlYXNlLW91dCwgZmlsbCAwLjFzIGVhc2Utb3V0LCBzdHJva2UgMC4xcyBlYXNlLW91dDtcbn1cblxuLm5vZGUtLWRpc2FibGVkIHtcbiAgb3BhY2l0eTogMC4xO1xufVxuXG4ubm9kZS1uYW1lIHtcbiAgZm9udC1mYW1pbHk6IFwiTGF0b1wiO1xuICB0ZXh0LWFuY2hvcjogbWlkZGxlO1xuICBhbGlnbm1lbnQtYmFzZWxpbmU6IGNlbnRyYWw7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG4gIGZpbGw6IHdoaXRlO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -2840,6 +3133,300 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************************************************!*\
   !*** ./src/app/components/map-skills/visuals/node-visual/node-visual.component.ts ***!
   \************************************************************************************/
+/*! exports provided: NodeVisualComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NodeVisualComponent", function() { return NodeVisualComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var src_app_services_tree_progress_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/_services/tree-progress.service */ "./src/app/_services/tree-progress.service.ts");
+
+
+
+
+let NodeVisualComponent = class NodeVisualComponent {
+    constructor(router, treeProgress) {
+        this.router = router;
+        this.treeProgress = treeProgress;
+    }
+    checkCompleted() {
+        return this.treeProgress.getCurrentProgress().includes(Number.parseInt(this.node.id, 10));
+    }
+    evaluateImageUrl() {
+        return `url('#pat${this.node.id}')`;
+    }
+    onDoubleClick(event) {
+        event.stopPropagation();
+        this.router.navigate(['/test/' + this.node.chalengeId]);
+    }
+};
+NodeVisualComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: src_app_services_tree_progress_service__WEBPACK_IMPORTED_MODULE_3__["TreeProgressService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('appNodeVisual')
+], NodeVisualComponent.prototype, "node", void 0);
+NodeVisualComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: '[appNodeVisual]',
+        template: `
+    <svg:g
+      [attr.transform]="'translate(' + node.x + ',' + node.y + ')'"
+      (dblclick)="onDoubleClick($event)"
+      matTooltip="{{ this.node.name }} // {{ this.node.result }} баллов // Кликните два раза для перехода на урок."
+    >
+      <defs>
+        <pattern [attr.id]="'pat' + node.id" [attr.x]="0" [attr.y]="0" width="100%" height="100%">
+          <image
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            [attr.x]="node.r / 2"
+            [attr.y]="node.r / 2"
+            [attr.width]="node.r"
+            [attr.height]="node.r"
+            [attr.xlink:href]="node.imageUrl"
+          ></image>
+        </pattern>
+      </defs>
+      <svg:circle
+        class="node"
+        [class.node--disabled]="!checkCompleted()"
+        [attr.fill]="evaluateImageUrl()"
+        cx="0"
+        cy="0"
+        [attr.r]="node.r"
+      ></svg:circle>
+
+      <svg:text class="node-name" [attr.font-size]="node.fontSize">
+        {{ node.id }}
+      </svg:text>
+    </svg:g>
+  `,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./node-visual.component.scss */ "./src/app/components/map-skills/visuals/node-visual/node-visual.component.scss")).default]
+    })
+], NodeVisualComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/people-skills/people-skills.component.scss":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/people-skills/people-skills.component.scss ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGVvcGxlLXNraWxscy9wZW9wbGUtc2tpbGxzLmNvbXBvbmVudC5zY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/people-skills/people-skills.component.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/people-skills/people-skills.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: PeopleSkillsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PeopleSkillsComponent", function() { return PeopleSkillsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/_services */ "./src/app/_services/index.ts");
+
+
+
+let PeopleSkillsComponent = class PeopleSkillsComponent {
+    constructor(d3Service, ref) {
+        this.d3Service = d3Service;
+        this.ref = ref;
+        this._options = { width: 800, height: 600 };
+    }
+    onResize(event) {
+        this.graph.initSimulation(this.options);
+    }
+    ngOnInit() {
+        /** Receiving an initialized simulated graph from our custom d3 service */
+        this.graph = this.d3Service.getForceDirectedGraph(this.nodes, this.links, this.options);
+    }
+    ngAfterViewInit() {
+        this.graph.initSimulation(this.options);
+        /** Binding change detection check on each tick
+         * This along with an onPush change detection strategy should enforce checking only when relevant!
+         * This improves scripting computation duration in a couple of tests I've made, consistently.
+         * Also, it makes sense to avoid unnecessary checks when we are dealing only with simulations data binding.
+         */
+        this.graph.ticker.subscribe(d => {
+            this.ref.markForCheck();
+        });
+    }
+    get options() {
+        return (this._options = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        });
+    }
+};
+PeopleSkillsComponent.ctorParameters = () => [
+    { type: src_app_services__WEBPACK_IMPORTED_MODULE_2__["D3Service"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('nodes')
+], PeopleSkillsComponent.prototype, "nodes", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('links')
+], PeopleSkillsComponent.prototype, "links", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:resize', ['$event'])
+], PeopleSkillsComponent.prototype, "onResize", null);
+PeopleSkillsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-people-skills',
+        changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+        template: `
+      <svg #svg [attr.width]="_options.width" [attr.height]="_options.height">
+          <g [appZoomableOf2]="svg">
+              <g [appLinkVisual]="link" *ngFor="let link of links"></g>
+              <g
+                      [appNodeVisual]="node"
+                      *ngFor="let node of nodes"
+                      [appDraggableNode2]="node"
+                      [appDraggableInGraph2]="graph"
+              ></g>
+          </g>
+      </svg>
+  `,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./people-skills.component.scss */ "./src/app/components/people-skills/people-skills.component.scss")).default]
+    })
+], PeopleSkillsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/people-skills/people-skills.module.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/components/people-skills/people-skills.module.ts ***!
+  \******************************************************************/
+/*! exports provided: PeopleSkillsModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PeopleSkillsModule", function() { return PeopleSkillsModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm2015/tooltip.js");
+/* harmony import */ var _people_skills_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./people-skills.component */ "./src/app/components/people-skills/people-skills.component.ts");
+/* harmony import */ var _visuals_node_visual_node_visual_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./visuals/node-visual/node-visual.component */ "./src/app/components/people-skills/visuals/node-visual/node-visual.component.ts");
+/* harmony import */ var _visuals_link_visual_link_visual_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./visuals/link-visual/link-visual.component */ "./src/app/components/people-skills/visuals/link-visual/link-visual.component.ts");
+/* harmony import */ var src_app_services__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/_services */ "./src/app/_services/index.ts");
+/* harmony import */ var _helpers_2zoomable_directive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../_helpers/2zoomable.directive */ "./src/app/_helpers/2zoomable.directive.ts");
+/* harmony import */ var _helpers_2draggable_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../_helpers/2draggable.directive */ "./src/app/_helpers/2draggable.directive.ts");
+
+
+
+
+
+
+
+
+
+
+
+let PeopleSkillsModule = class PeopleSkillsModule {
+};
+PeopleSkillsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_people_skills_component__WEBPACK_IMPORTED_MODULE_5__["PeopleSkillsComponent"], _visuals_node_visual_node_visual_component__WEBPACK_IMPORTED_MODULE_6__["NodeVisualComponent"], _helpers_2zoomable_directive__WEBPACK_IMPORTED_MODULE_9__["ZoomableDirective2"], _helpers_2draggable_directive__WEBPACK_IMPORTED_MODULE_10__["DraggableDirective2"], _visuals_link_visual_link_visual_component__WEBPACK_IMPORTED_MODULE_7__["LinkVisualComponent"]],
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_4__["MatTooltipModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
+        exports: [_people_skills_component__WEBPACK_IMPORTED_MODULE_5__["PeopleSkillsComponent"]],
+        providers: [src_app_services__WEBPACK_IMPORTED_MODULE_8__["D3Service"]]
+    })
+], PeopleSkillsModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/people-skills/visuals/link-visual/link-visual.component.scss":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/components/people-skills/visuals/link-visual/link-visual.component.scss ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".link {\n  stroke-width: 3.25;\n  stroke: #ef6046;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wZW9wbGUtc2tpbGxzL3Zpc3VhbHMvbGluay12aXN1YWwvQTpcXGVsaXRlXFxIYWNrUHJvamVjdC9zcmNcXGFwcFxcY29tcG9uZW50c1xccGVvcGxlLXNraWxsc1xcdmlzdWFsc1xcbGluay12aXN1YWxcXGxpbmstdmlzdWFsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3Blb3BsZS1za2lsbHMvdmlzdWFscy9saW5rLXZpc3VhbC9saW5rLXZpc3VhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0VBQ0EsZUFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wZW9wbGUtc2tpbGxzL3Zpc3VhbHMvbGluay12aXN1YWwvbGluay12aXN1YWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGluayB7XHJcbiAgc3Ryb2tlLXdpZHRoOiAzLjI1O1xyXG4gIHN0cm9rZTogcmdiKDIzOSwgOTYsIDcwKTtcclxufVxyXG4iLCIubGluayB7XG4gIHN0cm9rZS13aWR0aDogMy4yNTtcbiAgc3Ryb2tlOiAjZWY2MDQ2O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/people-skills/visuals/link-visual/link-visual.component.ts":
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/people-skills/visuals/link-visual/link-visual.component.ts ***!
+  \***************************************************************************************/
+/*! exports provided: LinkVisualComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkVisualComponent", function() { return LinkVisualComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let LinkVisualComponent = class LinkVisualComponent {
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('appLinkVisual')
+], LinkVisualComponent.prototype, "link", void 0);
+LinkVisualComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: '[appLinkVisual]',
+        template: `
+    <svg:line
+      class="link"
+      [attr.x1]="link.source.x"
+      [attr.y1]="link.source.y"
+      [attr.x2]="link.target.x"
+      [attr.y2]="link.target.y"
+    ></svg:line>
+  `,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./link-visual.component.scss */ "./src/app/components/people-skills/visuals/link-visual/link-visual.component.scss")).default]
+    })
+], LinkVisualComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/people-skills/visuals/node-visual/node-visual.component.scss":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/components/people-skills/visuals/node-visual/node-visual.component.scss ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".node {\n  cursor: pointer;\n  transition: stroke-width 0.1s ease-out, fill 0.1s ease-out, stroke 0.1s ease-out;\n}\n\n.node-name {\n  font-family: \"Lato\";\n  text-anchor: middle;\n  alignment-baseline: central;\n  font-weight: 300;\n  fill: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wZW9wbGUtc2tpbGxzL3Zpc3VhbHMvbm9kZS12aXN1YWwvQTpcXGVsaXRlXFxIYWNrUHJvamVjdC9zcmNcXGFwcFxcY29tcG9uZW50c1xccGVvcGxlLXNraWxsc1xcdmlzdWFsc1xcbm9kZS12aXN1YWxcXG5vZGUtdmlzdWFsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3Blb3BsZS1za2lsbHMvdmlzdWFscy9ub2RlLXZpc3VhbC9ub2RlLXZpc3VhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7RUFDQSxnRkFBQTtBQ0NGOztBREtBO0VBQ0UsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLDJCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0FDRkYiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Blb3BsZS1za2lsbHMvdmlzdWFscy9ub2RlLXZpc3VhbC9ub2RlLXZpc3VhbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ub2RlIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgdHJhbnNpdGlvbjogc3Ryb2tlLXdpZHRoIDAuMXMgZWFzZS1vdXQsIGZpbGwgMC4xcyBlYXNlLW91dCwgc3Ryb2tlIDAuMXMgZWFzZS1vdXQ7XHJcblxyXG4gIC8vIHN0cm9rZTogd2hpdGU7XHJcbiAgLy8gc3Ryb2tlLXdpZHRoOiAwLjI1O1xyXG59XHJcblxyXG4ubm9kZS1uYW1lIHtcclxuICBmb250LWZhbWlseTogJ0xhdG8nO1xyXG4gIHRleHQtYW5jaG9yOiBtaWRkbGU7XHJcbiAgYWxpZ25tZW50LWJhc2VsaW5lOiBjZW50cmFsO1xyXG4gIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgZmlsbDogd2hpdGU7XHJcbn1cclxuIiwiLm5vZGUge1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb246IHN0cm9rZS13aWR0aCAwLjFzIGVhc2Utb3V0LCBmaWxsIDAuMXMgZWFzZS1vdXQsIHN0cm9rZSAwLjFzIGVhc2Utb3V0O1xufVxuXG4ubm9kZS1uYW1lIHtcbiAgZm9udC1mYW1pbHk6IFwiTGF0b1wiO1xuICB0ZXh0LWFuY2hvcjogbWlkZGxlO1xuICBhbGlnbm1lbnQtYmFzZWxpbmU6IGNlbnRyYWw7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG4gIGZpbGw6IHdoaXRlO1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/people-skills/visuals/node-visual/node-visual.component.ts":
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/people-skills/visuals/node-visual/node-visual.component.ts ***!
+  \***************************************************************************************/
 /*! exports provided: NodeVisualComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2898,7 +3485,7 @@ NodeVisualComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
       </svg:text>
     </svg:g>
   `,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./node-visual.component.scss */ "./src/app/components/map-skills/visuals/node-visual/node-visual.component.scss")).default]
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./node-visual.component.scss */ "./src/app/components/people-skills/visuals/node-visual/node-visual.component.scss")).default]
     })
 ], NodeVisualComponent);
 
@@ -3286,8 +3873,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 /* harmony import */ var _map_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./map.component */ "./src/app/pages/map/map.component.ts");
-/* harmony import */ var src_app_components_map_skills_map_skills_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/components/map-skills/map-skills.module */ "./src/app/components/map-skills/map-skills.module.ts");
-/* harmony import */ var _landing_landing_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./landing/landing.component */ "./src/app/pages/map/landing/landing.component.ts");
+/* harmony import */ var _landing_landing_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./landing/landing.component */ "./src/app/pages/map/landing/landing.component.ts");
+/* harmony import */ var _components_map_skills_map_skills_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/map-skills/map-skills.module */ "./src/app/components/map-skills/map-skills.module.ts");
 
 
 
@@ -3298,8 +3885,8 @@ let MapModule = class MapModule {
 };
 MapModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_map_component__WEBPACK_IMPORTED_MODULE_3__["MapComponent"], _landing_landing_component__WEBPACK_IMPORTED_MODULE_5__["LandingComponent"]],
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], src_app_components_map_skills_map_skills_module__WEBPACK_IMPORTED_MODULE_4__["MapSkillsModule"]]
+        declarations: [_map_component__WEBPACK_IMPORTED_MODULE_3__["MapComponent"], _landing_landing_component__WEBPACK_IMPORTED_MODULE_4__["LandingComponent"]],
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _components_map_skills_map_skills_module__WEBPACK_IMPORTED_MODULE_5__["MapSkillsModule"]]
     })
 ], MapModule);
 
@@ -3360,6 +3947,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tasks_tasks_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../tasks/tasks.component */ "./src/app/pages/tasks/tasks.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../home/home.component */ "./src/app/pages/home/home.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _people_people_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../people/people.component */ "./src/app/pages/people/people.component.ts");
+
 
 
 
@@ -3382,6 +3971,7 @@ const routes = [
             { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_4__["ProfileComponent"] },
             { path: 'test/:id', component: _test_test_component__WEBPACK_IMPORTED_MODULE_5__["TestComponent"] },
             { path: 'map', component: _map_map_component__WEBPACK_IMPORTED_MODULE_7__["MapComponent"] },
+            { path: 'people', component: _people_people_component__WEBPACK_IMPORTED_MODULE_12__["PeopleComponent"] },
             { path: 'rate', component: _rating_rating_component__WEBPACK_IMPORTED_MODULE_8__["RatingComponent"] },
             { path: 'tasks', component: _tasks_tasks_component__WEBPACK_IMPORTED_MODULE_9__["TasksComponent"] },
             { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"] }
@@ -3428,6 +4018,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _rating_rating_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./rating/rating.component */ "./src/app/pages/rating/rating.component.ts");
 /* harmony import */ var _tasks_tasks_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./tasks/tasks.component */ "./src/app/pages/tasks/tasks.component.ts");
 /* harmony import */ var _home_home_module__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./home/home.module */ "./src/app/pages/home/home.module.ts");
+/* harmony import */ var _people_people_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./people/people.module */ "./src/app/pages/people/people.module.ts");
+
 
 
 
@@ -3449,6 +4041,7 @@ let PagesModule = class PagesModule {
 };
 PagesModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        // tslint:disable-next-line:max-line-length
         declarations: [_profile_profile_component__WEBPACK_IMPORTED_MODULE_3__["ProfileComponent"], _test_test_component__WEBPACK_IMPORTED_MODULE_8__["TestComponent"], _page_routing_page_routing_component__WEBPACK_IMPORTED_MODULE_5__["PageRoutingComponent"], _rating_rating_component__WEBPACK_IMPORTED_MODULE_14__["RatingComponent"], _tasks_tasks_component__WEBPACK_IMPORTED_MODULE_15__["TasksComponent"]],
         imports: [
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
@@ -3461,6 +4054,7 @@ PagesModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatCheckboxModule"],
             _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
             _map_map_module__WEBPACK_IMPORTED_MODULE_12__["MapModule"],
+            _people_people_module__WEBPACK_IMPORTED_MODULE_17__["PeopleModule"],
             _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatPaginatorModule"],
             _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatRadioModule"],
             _page_routing_page_routing_module__WEBPACK_IMPORTED_MODULE_4__["PageRoutingModule"],
@@ -3475,6 +4069,179 @@ PagesModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         exports: [_test_test_component__WEBPACK_IMPORTED_MODULE_8__["TestComponent"]]
     })
 ], PagesModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/people/landing/landing.component.scss":
+/*!*************************************************************!*\
+  !*** ./src/app/pages/people/landing/landing.component.scss ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("#page__container {\n  background-color: rgba(118, 96, 56, 0.54);\n  background-image: linear-gradient(rgba(29, 39, 48, 0.57) 1px, transparent 1px), linear-gradient(90deg, rgba(67, 87, 102, 0.43) 1px, transparent 1px), linear-gradient(rgba(41, 82, 110, 0.44) 1px, transparent 1px), linear-gradient(90deg, rgba(46, 93, 125, 0.55) 1px, transparent 1px), linear-gradient(rgba(81, 0, 94, 0.49) 1px, transparent 1px), linear-gradient(90deg, rgba(52, 78, 105, 0.41) 1px, transparent 1px);\n  background-size: 200px 200px, 200px 200px, 20px 20px, 20px 20px, 50px 50px, 50px 50px;\n  background-position: -1px -1px, -1px -1px, 0 0, 0 0, -1px -1px, -1px -1px;\n  width: 100vw;\n  height: 105%;\n  position: absolute;\n  z-index: -1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvcGVvcGxlL2xhbmRpbmcvQTpcXGVsaXRlXFxIYWNrUHJvamVjdC9zcmNcXGFwcFxccGFnZXNcXHBlb3BsZVxcbGFuZGluZ1xcbGFuZGluZy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcGFnZXMvcGVvcGxlL2xhbmRpbmcvbGFuZGluZy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHlDQUFBO0VBQ0EsNFpBQ0U7RUFNRixxRkFDRTtFQU1GLHlFQUNFO0VBTUYsWUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7QUNqQkYiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9wZW9wbGUvbGFuZGluZy9sYW5kaW5nLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3BhZ2VfX2NvbnRhaW5lciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgxMTgsIDk2LCA1NiwgMC41NCk7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTpcclxuICAgIGxpbmVhci1ncmFkaWVudChyZ2JhKDI5LCAzOSwgNDgsIDAuNTcpIDFweCwgdHJhbnNwYXJlbnQgMXB4KSxcclxuICAgIGxpbmVhci1ncmFkaWVudCg5MGRlZywgcmdiYSg2NywgODcsIDEwMiwgMC40MykgMXB4LCB0cmFuc3BhcmVudCAxcHgpLFxyXG4gICAgbGluZWFyLWdyYWRpZW50KHJnYmEoNDEsIDgyLCAxMTAsIDAuNDQpIDFweCwgdHJhbnNwYXJlbnQgMXB4KSxcclxuICAgIGxpbmVhci1ncmFkaWVudCg5MGRlZywgcmdiYSg0NiwgOTMsIDEyNSwgMC41NSkgMXB4LCB0cmFuc3BhcmVudCAxcHgpLFxyXG4gICAgbGluZWFyLWdyYWRpZW50KHJnYmEoODEsIDAsIDk0LCAwLjQ5KSAxcHgsIHRyYW5zcGFyZW50IDFweCksXHJcbiAgICBsaW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoNTIsIDc4LCAxMDUsIDAuNDEpIDFweCwgdHJhbnNwYXJlbnQgMXB4KTtcclxuICBiYWNrZ3JvdW5kLXNpemU6XHJcbiAgICAyMDBweCAyMDBweCxcclxuICAgIDIwMHB4IDIwMHB4LFxyXG4gICAgMjBweCAyMHB4LFxyXG4gICAgMjBweCAyMHB4LFxyXG4gICAgNTBweCA1MHB4LFxyXG4gICAgNTBweCA1MHB4O1xyXG4gIGJhY2tncm91bmQtcG9zaXRpb246XHJcbiAgICAtMXB4IC0xcHgsXHJcbiAgICAtMXB4IC0xcHgsXHJcbiAgICAwIDAsXHJcbiAgICAwIDAsXHJcbiAgICAtMXB4IC0xcHgsXHJcbiAgICAtMXB4IC0xcHg7XHJcbiAgd2lkdGg6IDEwMHZ3O1xyXG4gIGhlaWdodDogMTA1JTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgei1pbmRleDogLTE7XHJcbn1cclxuXHJcbiIsIiNwYWdlX19jb250YWluZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDExOCwgOTYsIDU2LCAwLjU0KTtcbiAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHJnYmEoMjksIDM5LCA0OCwgMC41NykgMXB4LCB0cmFuc3BhcmVudCAxcHgpLCBsaW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoNjcsIDg3LCAxMDIsIDAuNDMpIDFweCwgdHJhbnNwYXJlbnQgMXB4KSwgbGluZWFyLWdyYWRpZW50KHJnYmEoNDEsIDgyLCAxMTAsIDAuNDQpIDFweCwgdHJhbnNwYXJlbnQgMXB4KSwgbGluZWFyLWdyYWRpZW50KDkwZGVnLCByZ2JhKDQ2LCA5MywgMTI1LCAwLjU1KSAxcHgsIHRyYW5zcGFyZW50IDFweCksIGxpbmVhci1ncmFkaWVudChyZ2JhKDgxLCAwLCA5NCwgMC40OSkgMXB4LCB0cmFuc3BhcmVudCAxcHgpLCBsaW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoNTIsIDc4LCAxMDUsIDAuNDEpIDFweCwgdHJhbnNwYXJlbnQgMXB4KTtcbiAgYmFja2dyb3VuZC1zaXplOiAyMDBweCAyMDBweCwgMjAwcHggMjAwcHgsIDIwcHggMjBweCwgMjBweCAyMHB4LCA1MHB4IDUwcHgsIDUwcHggNTBweDtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogLTFweCAtMXB4LCAtMXB4IC0xcHgsIDAgMCwgMCAwLCAtMXB4IC0xcHgsIC0xcHggLTFweDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwNSU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogLTE7XG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/pages/people/landing/landing.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/pages/people/landing/landing.component.ts ***!
+  \***********************************************************/
+/*! exports provided: LandingComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LandingComponent", function() { return LandingComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
+
+let LandingComponent = class LandingComponent {
+    constructor() {
+        this.countX = 0;
+        this.countY = 0;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+    }
+    ngOnInit() {
+        this.moveEvent$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["fromEvent"])(document, 'mousemove');
+        this.moveEvent$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["throttleTime"])(2), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.destroy$)).subscribe((e) => {
+            this.countX += e.movementX / 15;
+            this.countY += e.movementY / 15;
+            document.getElementById('page__container').style.backgroundPositionX = `${this.countX}px`;
+            document.getElementById('page__container').style.backgroundPositionY = `${this.countY}px`;
+        });
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+    }
+};
+LandingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-landing',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./landing.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/people/landing/landing.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./landing.component.scss */ "./src/app/pages/people/landing/landing.component.scss")).default]
+    })
+], LandingComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/people/people.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/pages/people/people.component.scss ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3Blb3BsZS9wZW9wbGUuY29tcG9uZW50LnNjc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/pages/people/people.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/pages/people/people.component.ts ***!
+  \**************************************************/
+/*! exports provided: PeopleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PeopleComponent", function() { return PeopleComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/_models */ "./src/app/_models/index.ts");
+/* harmony import */ var src_app_app_config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/app.config */ "./src/app/app.config.ts");
+/* harmony import */ var _data_people__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_data/people */ "./src/app/_data/people.ts");
+
+
+
+
+
+let PeopleComponent = class PeopleComponent {
+    constructor() {
+        this.nodes = [];
+        this.links = [];
+        const nodesTree = _data_people__WEBPACK_IMPORTED_MODULE_4__["PEOPLE_DEFAULT"].nodes;
+        const linksTree = _data_people__WEBPACK_IMPORTED_MODULE_4__["PEOPLE_DEFAULT"].linksP;
+        const N = src_app_app_config__WEBPACK_IMPORTED_MODULE_3__["default"].N;
+        const getIndex = number => number - 1;
+        /** constructing the nodes array */
+        for (let i = 0; i < nodesTree.length; i++) {
+            this.nodes.push(new src_app_models__WEBPACK_IMPORTED_MODULE_2__["EducationNode"](i, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].iamgeUrl, nodesTree[i].name, nodesTree[i].result, nodesTree[i].challengeId));
+        }
+        for (let i = 0; i < linksTree.length; i++) {
+            /** increasing connections toll on connecting nodes */
+            const sourceID = nodesTree.reduce((res, el, index) => {
+                if (el.name === linksTree[i].source) {
+                    return index;
+                }
+                return res;
+            }, 0);
+            const targetID = nodesTree.reduce((res, el, index) => {
+                if (el.name === linksTree[i].target) {
+                    return index;
+                }
+                return res;
+            }, 0);
+            /** connecting the nodes before starting the simulation */
+            this.links.push(new src_app_models__WEBPACK_IMPORTED_MODULE_2__["EducationLink"](sourceID, targetID));
+        }
+    }
+};
+PeopleComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-people',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./people.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/people/people.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./people.component.scss */ "./src/app/pages/people/people.component.scss")).default]
+    })
+], PeopleComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/people/people.module.ts":
+/*!***********************************************!*\
+  !*** ./src/app/pages/people/people.module.ts ***!
+  \***********************************************/
+/*! exports provided: PeopleModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PeopleModule", function() { return PeopleModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _landing_landing_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./landing/landing.component */ "./src/app/pages/people/landing/landing.component.ts");
+/* harmony import */ var _people_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./people.component */ "./src/app/pages/people/people.component.ts");
+/* harmony import */ var _components_people_skills_people_skills_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/people-skills/people-skills.module */ "./src/app/components/people-skills/people-skills.module.ts");
+
+
+
+
+
+
+let PeopleModule = class PeopleModule {
+};
+PeopleModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_people_component__WEBPACK_IMPORTED_MODULE_4__["PeopleComponent"], _landing_landing_component__WEBPACK_IMPORTED_MODULE_3__["LandingComponent"]],
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _components_people_skills_people_skills_module__WEBPACK_IMPORTED_MODULE_5__["PeopleSkillsModule"]]
+    })
+], PeopleModule);
 
 
 
@@ -3622,7 +4389,7 @@ RatingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (":host {\n  display: block;\n  padding: 20px 0;\n}\n\n.section {\n  margin-bottom: 40px;\n}\n\n.section_about-you {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n}\n\n.section-title {\n  padding-bottom: 20px;\n  font-size: 40px;\n  font-weight: bold;\n  display: flex;\n  width: 100%;\n}\n\n.section-title:before, .section-title:after {\n  content: \"\";\n  border-bottom: 2px solid #222329;\n  margin: auto 0;\n}\n\n.section-title:before {\n  width: 50px;\n  margin-right: 20px;\n}\n\n.section-title:after {\n  flex-grow: 1;\n  margin-left: 20px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGFza3MvQTpcXGVsaXRlXFxIYWNrUHJvamVjdC9zcmNcXGFwcFxccGFnZXNcXHRhc2tzXFx0YXNrcy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcGFnZXMvdGFza3MvdGFza3MuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDRSxjQUFBO0VBQ0EsZUFBQTtBQ0ZGOztBREtBO0VBQ0UsbUJBQUE7QUNGRjs7QURHRTtFQUNFLGFBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7QUNESjs7QURHRTtFQUNFLG9CQWhCSztFQWlCTCxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxhQUFBO0VBQ0EsV0FBQTtBQ0RKOztBREVJO0VBQ0UsV0FBQTtFQUNBLGdDQUFBO0VBQ0EsY0FBQTtBQ0FOOztBREVJO0VBQ0UsV0FBQTtFQUNBLGtCQTVCRztBQzRCVDs7QURFSTtFQUNFLFlBQUE7RUFDQSxpQkFoQ0c7QUNnQ1QiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy90YXNrcy90YXNrcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiRndXR0ZXI6IDIwcHg7XHJcblxyXG4kbWFpbi1iZzogIzIyMjMyOTtcclxuOmhvc3R7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgcGFkZGluZzogMjBweCAwO1xyXG59XHJcblxyXG4uc2VjdGlvbiB7XHJcbiAgbWFyZ2luLWJvdHRvbTogJGd1dHRlcioyO1xyXG4gICZfYWJvdXQteW91IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIH1cclxuICAmLXRpdGxlIHtcclxuICAgIHBhZGRpbmctYm90dG9tOiAkZ3V0dGVyO1xyXG4gICAgZm9udC1zaXplOiA0MHB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICAmOmJlZm9yZSwgJjphZnRlciB7XHJcbiAgICAgIGNvbnRlbnQ6ICcnO1xyXG4gICAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgJG1haW4tYmc7XHJcbiAgICAgIG1hcmdpbjogYXV0byAwO1xyXG4gICAgfVxyXG4gICAgJjpiZWZvcmUge1xyXG4gICAgICB3aWR0aDogNTBweDtcclxuICAgICAgbWFyZ2luLXJpZ2h0OiAkZ3V0dGVyO1xyXG4gICAgfVxyXG4gICAgJjphZnRlciB7XHJcbiAgICAgIGZsZXgtZ3JvdzogMTtcclxuICAgICAgbWFyZ2luLWxlZnQ6ICRndXR0ZXI7XHJcbiAgICB9XHJcbiAgfVxyXG59XHJcblxyXG4iLCI6aG9zdCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwYWRkaW5nOiAyMHB4IDA7XG59XG5cbi5zZWN0aW9uIHtcbiAgbWFyZ2luLWJvdHRvbTogNDBweDtcbn1cbi5zZWN0aW9uX2Fib3V0LXlvdSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5zZWN0aW9uLXRpdGxlIHtcbiAgcGFkZGluZy1ib3R0b206IDIwcHg7XG4gIGZvbnQtc2l6ZTogNDBweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLnNlY3Rpb24tdGl0bGU6YmVmb3JlLCAuc2VjdGlvbi10aXRsZTphZnRlciB7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCAjMjIyMzI5O1xuICBtYXJnaW46IGF1dG8gMDtcbn1cbi5zZWN0aW9uLXRpdGxlOmJlZm9yZSB7XG4gIHdpZHRoOiA1MHB4O1xuICBtYXJnaW4tcmlnaHQ6IDIwcHg7XG59XG4uc2VjdGlvbi10aXRsZTphZnRlciB7XG4gIGZsZXgtZ3JvdzogMTtcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (":host {\n  display: block;\n  padding: 20px 0;\n}\n\n.section {\n  padding: 0 30px;\n  margin-bottom: 60px;\n}\n\n.section_about-you {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n}\n\n.section-title {\n  padding-bottom: 30px;\n  font-size: 40px;\n  font-weight: bold;\n  display: flex;\n  width: 100%;\n}\n\n.section-title:before, .section-title:after {\n  content: \"\";\n  border-bottom: 2px solid #222329;\n  margin: auto 0;\n}\n\n.section-title:before {\n  width: 50px;\n  margin-right: 30px;\n}\n\n.section-title:after {\n  flex-grow: 1;\n  margin-left: 30px;\n}\n\nmat-expansion-panel {\n  border: 1px solid rgba(34, 35, 41, 0.1);\n}\n\nmat-expansion-panel-header {\n  font-size: 24px;\n}\n\n.mat-expansion-panel-content {\n  font-size: 20px;\n  line-height: 1.25;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGFza3MvQTpcXGVsaXRlXFxIYWNrUHJvamVjdC9zcmNcXGFwcFxccGFnZXNcXHRhc2tzXFx0YXNrcy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcGFnZXMvdGFza3MvdGFza3MuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDRSxjQUFBO0VBQ0EsZUFBQTtBQ0ZGOztBREtBO0VBQ0UsZUFBQTtFQUNBLG1CQUFBO0FDRkY7O0FER0U7RUFDRSxhQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0FDREo7O0FER0U7RUFDRSxvQkFqQks7RUFrQkwsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7QUNESjs7QURFSTtFQUNFLFdBQUE7RUFDQSxnQ0FBQTtFQUNBLGNBQUE7QUNBTjs7QURFSTtFQUNFLFdBQUE7RUFDQSxrQkE3Qkc7QUM2QlQ7O0FERUk7RUFDRSxZQUFBO0VBQ0EsaUJBakNHO0FDaUNUOztBREtBO0VBQ0UsdUNBQUE7QUNGRjs7QURHRTtFQUNFLGVBQUE7QUNESjs7QURJQTtFQUNFLGVBQUE7RUFDQSxpQkFBQTtBQ0RGIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvdGFza3MvdGFza3MuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkZ3V0dGVyOiAzMHB4O1xyXG5cclxuJG1haW4tYmc6ICMyMjIzMjk7XHJcbjpob3N0e1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHBhZGRpbmc6IDIwcHggMDtcclxufVxyXG5cclxuLnNlY3Rpb24ge1xyXG4gIHBhZGRpbmc6IDAgJGd1dHRlcjtcclxuICBtYXJnaW4tYm90dG9tOiAkZ3V0dGVyKjI7XHJcbiAgJl9hYm91dC15b3Uge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtd3JhcDogd3JhcDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgfVxyXG4gICYtdGl0bGUge1xyXG4gICAgcGFkZGluZy1ib3R0b206ICRndXR0ZXI7XHJcbiAgICBmb250LXNpemU6IDQwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgICY6YmVmb3JlLCAmOmFmdGVyIHtcclxuICAgICAgY29udGVudDogJyc7XHJcbiAgICAgIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCAkbWFpbi1iZztcclxuICAgICAgbWFyZ2luOiBhdXRvIDA7XHJcbiAgICB9XHJcbiAgICAmOmJlZm9yZSB7XHJcbiAgICAgIHdpZHRoOiA1MHB4O1xyXG4gICAgICBtYXJnaW4tcmlnaHQ6ICRndXR0ZXI7XHJcbiAgICB9XHJcbiAgICAmOmFmdGVyIHtcclxuICAgICAgZmxleC1ncm93OiAxO1xyXG4gICAgICBtYXJnaW4tbGVmdDogJGd1dHRlcjtcclxuICAgIH1cclxuICB9XHJcbn1cclxuXHJcbm1hdC1leHBhbnNpb24tcGFuZWwge1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoJG1haW4tYmcsIC4xKTtcclxuICAmLWhlYWRlciB7XHJcbiAgICBmb250LXNpemU6IDI0cHg7XHJcbiAgfVxyXG59XHJcbi5tYXQtZXhwYW5zaW9uLXBhbmVsLWNvbnRlbnQge1xyXG4gIGZvbnQtc2l6ZTogMjBweDtcclxuICBsaW5lLWhlaWdodDogMS4yNTtcclxufSIsIjpob3N0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBhZGRpbmc6IDIwcHggMDtcbn1cblxuLnNlY3Rpb24ge1xuICBwYWRkaW5nOiAwIDMwcHg7XG4gIG1hcmdpbi1ib3R0b206IDYwcHg7XG59XG4uc2VjdGlvbl9hYm91dC15b3Uge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uc2VjdGlvbi10aXRsZSB7XG4gIHBhZGRpbmctYm90dG9tOiAzMHB4O1xuICBmb250LXNpemU6IDQwcHg7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbn1cbi5zZWN0aW9uLXRpdGxlOmJlZm9yZSwgLnNlY3Rpb24tdGl0bGU6YWZ0ZXIge1xuICBjb250ZW50OiBcIlwiO1xuICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzIyMjMyOTtcbiAgbWFyZ2luOiBhdXRvIDA7XG59XG4uc2VjdGlvbi10aXRsZTpiZWZvcmUge1xuICB3aWR0aDogNTBweDtcbiAgbWFyZ2luLXJpZ2h0OiAzMHB4O1xufVxuLnNlY3Rpb24tdGl0bGU6YWZ0ZXIge1xuICBmbGV4LWdyb3c6IDE7XG4gIG1hcmdpbi1sZWZ0OiAzMHB4O1xufVxuXG5tYXQtZXhwYW5zaW9uLXBhbmVsIHtcbiAgYm9yZGVyOiAxcHggc29saWQgcmdiYSgzNCwgMzUsIDQxLCAwLjEpO1xufVxubWF0LWV4cGFuc2lvbi1wYW5lbC1oZWFkZXIge1xuICBmb250LXNpemU6IDI0cHg7XG59XG5cbi5tYXQtZXhwYW5zaW9uLXBhbmVsLWNvbnRlbnQge1xuICBmb250LXNpemU6IDIwcHg7XG4gIGxpbmUtaGVpZ2h0OiAxLjI1O1xufSJdfQ== */");
 
 /***/ }),
 
@@ -3640,15 +4407,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-const data = [
-    { title: 'Введение', description: 'Первые шаги. Тест проверки знаний' },
-    { title: 'От простого к сложному', description: 'Вы начинаете развитие.......' },
-    { title: 'Постичь дзен', description: 'Для вас нет ничего невозможного' }
+const data1 = [
+    { title: 'Глава 1. Основные химические понятия и законы', description: 'Вам предстоит изучение основных понятий и определений, а также атомно-молекулярного учения.' },
+    { title: 'Глава 2. Сроение вещества', description: 'В этой главе Вы познакомитесь с такими понятиями, как Строение атома, Волновая теория строения атома и Периодическая система.' },
+    { title: 'Глава 3. Строение молекул и химическая связь', description: 'Здесь вы найдете информацию об основных характеристиках химической связи, Современных теориях хим. связи, Водородных связях, Межмолекулярных силах Ван-дер-Ваальса и Комплексных соединениях.' }
+];
+const data2 = [
+    { title: 'Глава 1. Основы основ', description: 'В этой главе Вы познакомитесь с основными понятиями в физике, такими как Пространство и время, Материя и вещество, а также Движение.' },
+    { title: 'Глава 2. Единицы', description: 'Здесь Вас ожидает информация о стандартных величинах в физике, единицах времени и длины, окружностей и углов.' },
+    { title: 'Глава 3. Минимум математики', description: 'Понимание физики без опоры на некоторые математические действия существенно затрудняется, поэтому Вам предстоит познакомиться с такими понятиями как сложение/вычитание, умножение/деление, возведение в степень и логарифмирование. Также необходимым будет понятие мнимой единицы i.' }
+];
+const data3 = [
+    { title: 'Глава 1. Величины и числовые системы', description: 'Уже не хватает фантазии на описание.' },
+    { title: 'Глава 2. Решение неравенств и уравнений', description: 'Поэтому я просто буду писать то, что приходит в голову.' },
+    { title: 'Глава 3. Системы координат', description: 'А здесь вообще психану и сделаю так: Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Заглавных наш всеми предупреждал гор предупредила мир последний предложения бросил своего коварных о оксмокс семантика, он взгляд пор снова которое.' }
 ];
 let TasksComponent = class TasksComponent {
     constructor() { }
     ngOnInit() {
-        this.topics = data;
+        this.topics1 = data1;
+        this.topics2 = data2;
+        this.topics3 = data3;
     }
 };
 TasksComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -3694,6 +4473,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /* harmony import */ var src_app_services_telegram_bot_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/_services/telegram-bot.service */ "./src/app/_services/telegram-bot.service.ts");
 /* harmony import */ var _data_map__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../_data/map */ "./src/app/_data/map.ts");
+/* harmony import */ var src_app_services_tree_progress_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/_services/tree-progress.service */ "./src/app/_services/tree-progress.service.ts");
+
 
 
 
@@ -3703,18 +4484,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let TestComponent = class TestComponent {
-    constructor(router, _formBuilder, challengeService, route, telegramBot) {
+    constructor(router, _formBuilder, challengeService, route, telegramBot, treeProgress) {
         this.router = router;
         this._formBuilder = _formBuilder;
         this.challengeService = challengeService;
         this.route = route;
         this.telegramBot = telegramBot;
+        this.treeProgress = treeProgress;
         this.isLinear = false;
     }
     ngOnInit() {
         this.challenge$ = this.route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((params) => this.challengeService.getChallengeById(Number.parseInt(params.get('id'), 10))));
         this.challenge$.subscribe(e => {
-            // this.telegramBot.userStartChallenge(e);
+            this.telegramBot.userStartChallenge(e);
             this.testData = e;
         });
         const hobbiesGroup = {};
@@ -3730,12 +4512,13 @@ let TestComponent = class TestComponent {
         // @ts-ignore
         _data_map__WEBPACK_IMPORTED_MODULE_7__["MAP_DEFAULT"].nodes.reduce((res, el) => {
             if (el.challengeId === this.testData.id) {
+                this.treeProgress.saveCurrentProgress([this.testData.id]);
                 return el;
             }
             return res;
         }, {}).result = this.testData.excersices.reduce((sum, el) => {
             if (el.rightAnswer === this.contactForm.value.hobbies[el.title]) {
-                return sum += 10;
+                return (sum += 10);
             }
             return sum;
         }, 0);
@@ -3747,7 +4530,8 @@ TestComponent.ctorParameters = () => [
     { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
     { type: src_app_services_challenge_service__WEBPACK_IMPORTED_MODULE_3__["ChallengeService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
-    { type: src_app_services_telegram_bot_service__WEBPACK_IMPORTED_MODULE_6__["TelegramBotService"] }
+    { type: src_app_services_telegram_bot_service__WEBPACK_IMPORTED_MODULE_6__["TelegramBotService"] },
+    { type: src_app_services_tree_progress_service__WEBPACK_IMPORTED_MODULE_8__["TreeProgressService"] }
 ];
 TestComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

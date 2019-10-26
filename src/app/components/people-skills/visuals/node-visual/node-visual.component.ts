@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { EducationNode } from 'src/app/_models';
 import { Router } from '@angular/router';
-import { TreeProgressService } from 'src/app/_services/tree-progress.service';
 
 @Component({
   selector: '[appNodeVisual]',
@@ -9,7 +8,7 @@ import { TreeProgressService } from 'src/app/_services/tree-progress.service';
     <svg:g
       [attr.transform]="'translate(' + node.x + ',' + node.y + ')'"
       (dblclick)="onDoubleClick($event)"
-      matTooltip="{{ this.node.name }} // {{ this.node.result }} баллов // Кликните два раза для перехода на урок."
+      matTooltip="{{this.node.name}} // {{this.node.result}} баллов // Кликните два раза для перехода на урок."
     >
       <defs>
         <pattern [attr.id]="'pat' + node.id" [attr.x]="0" [attr.y]="0" width="100%" height="100%">
@@ -23,14 +22,7 @@ import { TreeProgressService } from 'src/app/_services/tree-progress.service';
           ></image>
         </pattern>
       </defs>
-      <svg:circle
-        class="node"
-        [class.node--disabled]="!checkCompleted()"
-        [attr.fill]="evaluateImageUrl()"
-        cx="0"
-        cy="0"
-        [attr.r]="node.r"
-      ></svg:circle>
+      <svg:circle class="node" [attr.fill]="evaluateImageUrl()" cx="0" cy="0" [attr.r]="node.r"></svg:circle>
 
       <svg:text class="node-name" [attr.font-size]="node.fontSize">
         {{ node.id }}
@@ -42,11 +34,7 @@ import { TreeProgressService } from 'src/app/_services/tree-progress.service';
 export class NodeVisualComponent {
   @Input('appNodeVisual') node: EducationNode;
 
-  constructor(public router: Router, public treeProgress: TreeProgressService) {}
-
-  checkCompleted() {
-    return this.treeProgress.getCurrentProgress().includes(Number.parseInt(this.node.id, 10));
-  }
+  constructor(public router: Router) {}
 
   evaluateImageUrl() {
     return `url('#pat${this.node.id}')`;
