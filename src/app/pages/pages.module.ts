@@ -9,12 +9,12 @@ import { TestComponent } from './test/test.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule, MatFormFieldModule, MatInputModule, MatStepperModule } from '@angular/material';
 import { FormModule } from './test/form/form.module';
-import { LandingComponent } from './landing/landing.component';
+import { LandingComponent } from './map/landing/landing.component';
 import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 
 @NgModule({
-  declarations: [ProfileComponent, TestComponent, PageRoutingComponent, LandingComponent],
+  declarations: [ProfileComponent, TestComponent, PageRoutingComponent],
   imports: [
     CommonModule,
     HeaderModule,
