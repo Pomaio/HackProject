@@ -1,50 +1,30 @@
-<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+<div class="test-name">{{testData.name}}</div>
 
-<mat-horizontal-stepper [linear]="isLinear" #stepper>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-    <mat-step>
-      <ng-template matStepLabel>Математика</ng-template>
-      <div class="example-h2">Нравится ли вам математика?</div>
+  <mat-horizontal-stepper formGroupName="hobbies" [linear]="isLinear" #stepper>
 
-      <mat-radio-group formControlName="math" required>
+      <mat-step *ngFor="let hobby of testData.excersices">
+        <ng-template matStepLabel>{{hobby.title}}</ng-template>
+        <div class="example-h2">{{hobby.question}}</div>
+
+        <mat-radio-group [formControlName]="hobby.title" required>
+          <div *ngFor="let checkpoint of hobby.answers">
+            <div style="height: 20px"></div>
+            <mat-radio-button class="example-margin" [value]="checkpoint">{{checkpoint}}</mat-radio-button>
+          </div>
+
+
+        </mat-radio-group>
+      </mat-step>
+
+      <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        Отправить на проверку?
         <div style="height: 20px"></div>
-        <mat-radio-button class="example-margin" value="Да">Да</mat-radio-button>
-        <div style="height: 20px"></div>
-        <mat-radio-button class="example-margin" value="Нет">Нет</mat-radio-button>
-      </mat-radio-group>
-    </mat-step>
-
-    <mat-step>
-      <ng-template matStepLabel>Русский язык</ng-template>
-      <div class="example-h2">Нравится ли вам русский язык?</div>
-
-      <mat-radio-group formControlName="rush" required>
-        <div style="height: 20px"></div>
-        <mat-radio-button class="example-margin" value="Да">Да</mat-radio-button>
-        <div style="height: 20px"></div>
-        <mat-radio-button class="example-margin" value="Нет">Нет</mat-radio-button>
-      </mat-radio-group>
-    </mat-step>
-
-    <mat-step>
-      <ng-template matStepLabel>Физика</ng-template>
-      <div class="example-h2">Нравится ли вам физика?</div>
-
-      <mat-radio-group formControlName="physic" required>
-        <div style="height: 20px"></div>
-        <mat-radio-button class="example-margin" value="Да">Да</mat-radio-button>
-        <div style="height: 20px"></div>
-        <mat-radio-button class="example-margin" value="Нет">Нет</mat-radio-button>
-      </mat-radio-group>
-    </mat-step>
-
-    <mat-step>
-      <ng-template matStepLabel>Done</ng-template>
-      Отправить на проверку?
-      <div style="height: 20px"></div>
-      <div>
-        <button mat-button [disabled]="!profileForm.valid"  color="primary" type="submit">Отправить</button>
-      </div>
-    </mat-step>
-</mat-horizontal-stepper>
+        <div>
+          <button mat-button [disabled]="!contactForm.valid" color="primary" type="submit">Отправить</button>
+        </div>
+      </mat-step>
+  </mat-horizontal-stepper>
 </form>

@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import * as faker from 'faker';
 
 export interface PeriodicElement {
   name: string;
   position: number;
-  weight: number;
-  symbol: string;
+  score: number;
+  region: string;
 }
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-];
+const Student_DATA: PeriodicElement[] = new Array(30).fill(null).map((v, i) => ({
+  name: faker.name.firstName(),
+  position: i,
+  score: faker.random.number(),
+  region: faker.address.country()
+}));
+const Teacher_DATA: PeriodicElement[] = new Array(30).fill(null).map((v, i) => ({
+  name: faker.name.firstName(),
+  position: i,
+  score: faker.random.number(),
+  region: faker.address.country()
+}));
 
 @Component({
   selector: 'app-rating',
@@ -26,11 +27,40 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class RatingComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['position', 'name', 'score', 'region'];
+  dataSource: any;
+  DATA: any;
+  length: any;
   constructor() { }
 
   ngOnInit() {
+    this.DATA = Student_DATA;
+    this.length = this.DATA.length;
+    this.fiiterData(0);
+  }
+  fiiterData(page: number) {
+    this.dataSource = this.DATA.slice(10 * page, 10 * (page + 1));
+  }
+  pageEvent(e: any) {
+    console.log(e);
+    this.fiiterData(e.pageIndex);
   }
 
+  changeData(value: string) {
+    this.DATA = value === 'students' ? Student_DATA : Teacher_DATA;
+    this.fiiterData(0);
+  }
+
+  getStar(position: number ) {
+    switch (position) {
+      case 0:
+        return '★'.repeat(3);
+      case 1:
+        return '★'.repeat(2);
+      case 2:
+        return '★'.repeat(1);
+      default:
+        return '';
+    }
+  }
 }
