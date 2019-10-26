@@ -11,17 +11,18 @@ import { Router } from '@angular/router';
       matTooltip="Кликните два раза для перехода на урок."
     >
       <defs>
-        <pattern id="pat" [attr.x]="-node.r" [attr.y]="-node.r" [attr.width]="node.r * 2" [attr.height]="node.r * 2">
+        <pattern [attr.id]="'pat' + node.id" [attr.x]="0" [attr.y]="0" width="100%" height="100%">
           <image
-            [attr.x]="-node.r"
-            [attr.y]="-node.r"
-            [attr.width]="node.r * 2"
-            [attr.height]="node.r * 2"
-            xlink:href="jupitier.svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            [attr.x]="node.r / 2"
+            [attr.y]="node.r / 2"
+            [attr.width]="node.r"
+            [attr.height]="node.r"
+            [attr.xlink:href]="node.imageUrl"
           ></image>
         </pattern>
       </defs>
-      <svg:circle class="node" fill="url('#pat')" cx="0" cy="0" [attr.r]="node.r"></svg:circle>
+      <svg:circle class="node" [attr.fill]="evaluateImageUrl()" cx="0" cy="0" [attr.r]="node.r"></svg:circle>
 
       <svg:text class="node-name" [attr.font-size]="node.fontSize">
         {{ node.id }}
@@ -34,6 +35,10 @@ export class NodeVisualComponent {
   @Input('appNodeVisual') node: EducationNode;
 
   constructor(public router: Router) {}
+
+  evaluateImageUrl() {
+    return `url('#pat${this.node.id}')`;
+  }
 
   onDoubleClick(event: any) {
     event.stopPropagation();

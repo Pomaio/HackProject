@@ -4,175 +4,175 @@ export const MAP_DEFAULT = {
       name: 'Старт',
       r: 55,
       fontSize: 20,
-      color: 'green'
+      iamgeUrl: 'jupitier.svg'
     },
     {
       name: 'Математика',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Математика 1',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Математика 2',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Математика 3',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Алгебра',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Алгебра 1',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Алгебра 2',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Алгебра 3',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Алгебра 4',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Геометрия',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Геометрия 1',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Геометрия 2',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Физика',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Химия',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Экономика',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Чистописание',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Чистописание 1',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Чистописание 2',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Чтение',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Философия',
       r: 66,
       fontSize: 30,
-      color: 'yellow'
+      iamgeUrl: 'jupitier.svg'
     },
     {
       name: 'Чтение 1',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Чтение 2',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Русский язык',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Русский язык 1',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Русский язык 2',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Литература',
       r: 42,
       fontSize: 20,
-      color: 'red'
+      iamgeUrl: 'venus.svg'
     },
     {
       name: 'Литература 1',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'mercury.svg'
     },
     {
       name: 'Литература 2',
       r: 22,
       fontSize: 20,
-      color: 'blue'
+      iamgeUrl: 'mercury.svg'
     },
   ],
   links: [
