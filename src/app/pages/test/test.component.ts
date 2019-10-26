@@ -54,7 +54,7 @@ export class TestComponent implements OnInit {
     // @ts-ignore
     (MAP_DEFAULT.nodes.reduce((res, el) => {
       if (el.challengeId === this.testData.id) {
-        this.treeProgress.saveCurrentProgress(this.testData.id);
+        this.treeProgress.saveCurrentProgress([this.testData.id]);
         return el;
       }
       return res;
