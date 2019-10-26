@@ -15,10 +15,10 @@ const routes: Routes = [
     children: [
       { path: 'landing', component: LandingComponent },
       { path: 'profile', component: ProfileComponent },
-      { path: 'test', component: TestComponent },
+      { path: 'test/:id', component: TestComponent },
       { path: 'map', component: MapComponent },
-      {path: 'rate', component: RatingComponent},
-      {path: 'tasks', component: TasksComponent}
+      { path: 'rate', component: RatingComponent },
+      { path: 'tasks', component: TasksComponent }
     ]
   }
 ];

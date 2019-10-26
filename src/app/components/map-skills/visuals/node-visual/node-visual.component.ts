@@ -16,3 +16,4 @@ import { EducationNode } from 'src/app/_models';
 export class NodeVisualComponent {
   @Input('appNodeVisual') node: EducationNode;
 }
+

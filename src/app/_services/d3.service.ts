@@ -24,8 +24,9 @@ export class D3Service {
       container.attr('transform', 'translate(' + transform.x + ',' + transform.y + ') scale(' + transform.k + ')');
     };
 
+    const initialTransform = d3.zoomIdentity.translate(527, 187).scale(0.18);
     zoom = d3.zoom().on('zoom', zoomed);
-    svg.call(zoom);
+    svg.call(zoom).call(zoom.transform, initialTransform);
   }
 
   /** A method to bind a draggable behaviour to an svg element */
