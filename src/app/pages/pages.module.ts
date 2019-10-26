@@ -16,13 +16,12 @@ import {
   MatTableModule
 } from '@angular/material';
 import { FormModule } from './test/form/form.module';
-import { LandingComponent } from './landing/landing.component';
 import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
-  declarations: [ProfileComponent, TestComponent, PageRoutingComponent, LandingComponent, RatingComponent],
+  declarations: [ProfileComponent, TestComponent, PageRoutingComponent,  RatingComponent],
   imports: [
     CommonModule,
     HeaderModule,
