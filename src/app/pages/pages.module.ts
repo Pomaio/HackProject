@@ -11,6 +11,7 @@ import { MatButtonModule, MatFormFieldModule, MatInputModule, MatStepperModule }
 import { FormModule } from './test/form/form.module';
 import { LandingComponent } from './landing/landing.component';
 import { MapModule } from './map/map.module';
+import { CarouselModule } from '../components/carousel/carousel.module';
 
 @NgModule({
   declarations: [ProfileComponent, TestComponent, PageRoutingComponent, LandingComponent],
@@ -25,7 +26,8 @@ import { MapModule } from './map/map.module';
     MatButtonModule,
     FormModule,
     MapModule,
-    PageRoutingModule
+    PageRoutingModule,
+    CarouselModule
   ],
   exports: [TestComponent]
 })
