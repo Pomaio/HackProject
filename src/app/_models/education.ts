@@ -21,28 +21,34 @@ export class EducationNode implements d3.SimulationNodeDatum {
   id: string;
   name: string;
   chalenges: Challenge[];
+  r: number;
+  fontSize: number;
+  color: string;
   linkCount = 0;
 
-  constructor(id) {
+  constructor(id, r, fontSize, color) {
     this.id = id;
+    this.r = r;
+    this.fontSize = fontSize;
+    this.color = color;
   }
 
-  normal = () => {
-    return Math.sqrt(this.linkCount / APP_CONFIG.N);
-  };
+  // normal = () => {
+  //   return Math.sqrt(this.linkCount / APP_CONFIG.N);
+  // };
 
-  get r() {
-    return 50 * this.normal() + 10;
-  }
+  // get r() {
+  //   return 50 * this.normal() + 10;
+  // }
 
-  get fontSize() {
-    return 30 * this.normal() + 10 + 'px';
-  }
+  // get fontSize() {
+  //   return 30 * this.normal() + 10 + 'px';
+  // }
 
-  get color() {
-    const index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal());
-    return APP_CONFIG.SPECTRUM[index];
-  }
+  // get color() {
+  //   const index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal());
+  //   return APP_CONFIG.SPECTRUM[index];
+  // }
 }
 
 export class EducationLink implements d3.SimulationLinkDatum<EducationNode> {
