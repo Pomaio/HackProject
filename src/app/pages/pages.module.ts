@@ -32,6 +32,7 @@ import {RatingComponent} from './rating/rating.component';
     MatCheckboxModule,
     MatButtonModule,
     MapModule,
+    MatPaginatorModule,
     MatRadioModule,
     PageRoutingModule,
     CarouselModule,
