@@ -16,15 +16,19 @@
 
 
         </mat-radio-group>
+        <div class="action-button">
+          <button mat-button matStepperNext>Next</button>
+        </div>
       </mat-step>
 
       <mat-step>
         <ng-template matStepLabel>Done</ng-template>
         Отправить на проверку?
-        <div style="height: 20px"></div>
-        <div>
+        <div class="action-button">
           <button mat-button [disabled]="!contactForm.valid" color="primary" type="submit">Отправить</button>
         </div>
       </mat-step>
+
+
   </mat-horizontal-stepper>
 </form>
