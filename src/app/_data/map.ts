@@ -2,6 +2,7 @@ export const MAP_DEFAULT = {
   nodes: [
     {
       name: 'Старт',
+      result: null,
       r: 175,
       fontSize: 20,
       iamgeUrl: 'assets/planets/jupitier.svg'

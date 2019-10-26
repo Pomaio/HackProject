@@ -24,11 +24,10 @@ import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 import { RatingComponent } from './rating/rating.component';
 import { TasksComponent } from './tasks/tasks.component';
-import { ResultsComponent } from './results/results.component';
 import { HomeModule } from './home/home.module';
 
 @NgModule({
-  declarations: [ProfileComponent, TestComponent, PageRoutingComponent, RatingComponent, TasksComponent, ResultsComponent],
+  declarations: [ProfileComponent, TestComponent, PageRoutingComponent, RatingComponent, TasksComponent],
   imports: [
     CommonModule,
     HeaderModule,

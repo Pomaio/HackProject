@@ -10,21 +10,21 @@ export const FAKE_CHALLENGES: Challenge[] = [
         title: `Математика`,
         question: 'Вы любите математику?',
         answers: ['Да', 'Нет'],
-        rightAnswer: ['Да']
+        rightAnswer: 'Да'
       },
 
       {
         title: `Физика`,
         question: 'Вы любите физику?',
         answers: ['Да', 'Нет'],
-        rightAnswer: ['Да']
+        rightAnswer: 'Да'
       },
 
       {
         title: `Литература`,
         question: 'Вы любите литературу?',
         answers: ['Да', 'Нет'],
-        rightAnswer: ['Да']
+        rightAnswer: 'Да'
       },
     ],
     solved: false
