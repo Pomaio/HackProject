@@ -1,0 +1,35 @@
+// ---------------------- Variables ----------------------
+$gutter: 20px;
+
+$main-bg: #222329;
+$main-bg-light: lighten($main-bg, 60%);
+
+
+// ------------------------ Styles ------------------------
+.grid-container {
+    display: grid;
+}
+.flex-container {
+    display: flex;
+}
+
+.profile {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $gutter;
+    margin-bottom: $gutter;
+}
+.section {
+    background-color: $main-bg-light;
+}
+.img-wrapper {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10em;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column-title, .user-name, .img-wrapper {
+    margin-bottom: $gutter;
+}
