@@ -8,12 +8,14 @@ import { MapComponent } from '../map/map.component';
 import { RatingComponent } from '../rating/rating.component';
 import { TasksComponent } from '../tasks/tasks.component';
 import {ResultsComponent} from '../results/results.component';
+import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
   {
     path: '',
     component: PageRoutingComponent,
     children: [
+      { path: '', component: HomeComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'test/:id', component: TestComponent },
