@@ -8,6 +8,7 @@ import { MapComponent } from '../map/map.component';
 import { RatingComponent } from '../rating/rating.component';
 import { TasksComponent } from '../tasks/tasks.component';
 import { HomeComponent } from '../home/home.component';
+import { LoginComponent } from '../login/login.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,8 @@ const routes: Routes = [
       { path: 'test/:id', component: TestComponent },
       { path: 'map', component: MapComponent },
       { path: 'rate', component: RatingComponent },
-      { path: 'tasks', component: TasksComponent }
+      { path: 'tasks', component: TasksComponent },
+      { path: 'login', component: LoginComponent }
     ]
   }
 ];
@@ -29,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PageRoutingModule {}
+export class PageRoutingModule { }

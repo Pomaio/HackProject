@@ -7,6 +7,8 @@ import { HeaderModule } from '../components/header/header.module';
 import { FooterModule } from '../components/footer/footer.module';
 import { TestComponent } from './test/test.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginModule } from './login/login.module';
+
 import {
   MatButtonModule,
   MatButtonToggleModule,
@@ -46,9 +48,10 @@ import { HomeModule } from './home/home.module';
     MatTableModule,
     MatExpansionModule,
     MatProgressBarModule,
+    LoginModule,
     MatButtonToggleModule,
     HomeModule
   ],
   exports: [TestComponent]
 })
-export class PagesModule {}
+export class PagesModule { }
