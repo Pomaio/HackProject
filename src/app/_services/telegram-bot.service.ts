@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { AuthenticationService } from '.';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
+import { environment  } from 'src/environments/environment';
 import { Challenge } from '../_models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TelegramBotService {
-  token = environment.telegramBot;
-  chat_id = environment.chart_id;
+  token = (environment as any).telegramBot;
+  chat_id = (environment as any).chart_id;
 
   constructor(public authService: AuthenticationService, public http: HttpClient) {}
 
