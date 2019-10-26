@@ -51,12 +51,12 @@ export class TestComponent implements OnInit {
     console.log(this.testData, MAP_DEFAULT.nodes[this.testData.id]);
 
     // @ts-ignore
-    MAP_DEFAULT.nodes.reduce((res, el) => {
+    (MAP_DEFAULT.nodes.reduce((res, el) => {
       if (el.challengeId === this.testData.id) {
         return el;
       }
       return res;
-    }, {}).result = this.testData.excersices.reduce((sum, el) => {
+    }, {})as any).result = this.testData.excersices.reduce((sum, el) => {
       if (el.rightAnswer === this.contactForm.value.hobbies[el.title]) {
         return sum += 10;
       }
