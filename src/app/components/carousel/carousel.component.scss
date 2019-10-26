@@ -1,7 +1,8 @@
 .carousel {
+  display: inline-block;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 400px;
   perspective: 500px;
   transform-style: preserve-3d;

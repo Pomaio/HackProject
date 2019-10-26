@@ -3,6 +3,8 @@ $gutter: 20px;
 
 $main-bg: #222329;
 $main-bg-light: lighten($main-bg, 60%);
+$content-bg: lighten($main-bg, 80%);
+$accent: #466cff;
 
 
 // ------------------------ Styles ------------------------
@@ -12,14 +14,11 @@ $main-bg-light: lighten($main-bg, 60%);
 .flex-container {
     display: flex;
 }
-
 .profile {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: $gutter;
-    margin-bottom: $gutter;
-}
-.section {
-    background-color: $main-bg-light;
+    font-size: 18px;
+    color:  $main-bg;
+    padding: $gutter;
+    background-color: $content-bg;
 }
 .img-wrapper {
     height: 100px;
@@ -27,9 +26,125 @@ $main-bg-light: lighten($main-bg, 60%);
     overflow: hidden;
     border-radius: 10em;
     background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
+    // Удалить
+    text-align: center;
+    padding-top: 25px;
 }
-.column-title, .user-name, .img-wrapper {
-    margin-bottom: $gutter;
+.button {
+    font-size: 18px;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: $accent;
+    padding: 20px 60px;
+    border-radius: 2px;
+	text-align: center;
+    position: relative;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    &::after {
+        transition: background-color .2s ease;
+        position: absolute;
+        content: '';
+        height: 4px;
+        bottom: 0;
+        width: 100%;
+        background-color: darken($accent, 50%);
+        opacity: .18;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        left: 0;
+    }
+    &:focus, &:hover {
+        text-decoration: none;
+				outline: none;
+        color: #fff;
+    }
+    &:hover {
+        background-color: lighten($accent, 2%);
+        &::after {
+            opacity: .12;
+        }
+    }
+    &:active {
+				background-color: darken($accent, 5%);
+				outline: none;
+        &::after {
+            opacity: .32;
+        }
+	}
+}
+
+
+.section {
+    margin-bottom: $gutter*2;
+    &_about-you {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &-title {
+        padding-bottom: $gutter;
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        width: 100%;
+        &:before, &:after {
+            content: '';
+            border-bottom: 2px solid $main-bg;
+            margin: auto 0;
+        }
+        &:before {
+            width: 50px;
+            margin-right: $gutter;
+        }
+        &:after {
+            flex-grow: 1;
+            margin-left: $gutter;
+        }
+    }
+}
+.user-name {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: $gutter/4;
+    span:nth-last-child(1) {
+        margin-left: .5em;
+    }
+}
+.rate {
+    span:nth-last-child(1) {
+    margin-left: .5em;    
+    }
+}
+.user-information {
+    flex-direction: column;
+    margin: 0 $gutter;
+}
+.main-info {
+    color: $content-bg;
+    border-radius: 3px;
+    margin-top: $gutter;
+    padding: $gutter 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: $accent;
+    span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.achievements-content {
+    margin: $gutter 0;
+    width: 100%;
+    justify-content: space-around;
+}
+.btn_achievements {
+    display: inline-block;
+}
+.ahievement-name {
+    font-weight: bold;
 }

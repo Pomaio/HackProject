@@ -1,25 +1,50 @@
 <div class="profile">
-    <div class="section_about-you">
+    <div class="section section_about-you">
         <div class="about-you section-title">О Вас</div>
         <div class="img-wrapper">
             <p><i>Аватар профиля</i></p>
             <!-- Вместо этого добавить изображение: <img src="" alt="" class="img-responsove avatar"> -->
         </div>
-        <div class="user-name">
-            <p class="first-name">Виллентретенмерт</p>
-            <p class="last-name">Яфмамамиасондович</p>
+
+        <div class="flex-container user-information">
+            <div class="user-name">
+                <span class="first-name">Виллентретенмерт</span>
+                <span class="last-name">Яфмамиасондович</span>
+            </div>
+
+            <div class="rate">
+                <span class="rate-title">Рейтинг:</span>
+                <span class="rate-value">5 звезд (сделать нормальные звезды)</span>
+            </div>
         </div>
 
-        <p class="rate">Рейтинг:</p>
-        <P class="rate-value">5 звезд</P>
-
+        <div class="main-info flex-container">
+            <div class="main-info_item"><span class="achievements-count">#</span> Достижений</div>
+            <div class="main-info_item"><span class="skills-count">#</span> Навыков</div>
+            <div class="main-info_item"><span class="best-field">Химия</span> – <span class="field-percentage">%</span>
+                освоено</div>
+        </div>
 
     </div>
-    <div class="section_achievements">
+    <div class="section section_achievements">
         <div class="achievements section-title">Достижения</div>
-        <app-carousel></app-carousel>
+        <div class="flex-container achievements-content">
+            <div class="achievement">
+                <div class="ahievement-name">Достижение 1</div>
+                <div class="achievement-description">Описание достижения</div>
+            </div>
+            <div class="achievement">
+                <div class="ahievement-name">Достижение 2</div>
+                <div class="achievement-description">Описание достижения</div>
+            </div>
+            <div class="achievement">
+                <div class="ahievement-name">Достижение 3</div>
+                <div class="achievement-description">Описание достижения</div>
+            </div>
+            <button class="button btn_achievements">Все достижения</button>
+        </div>
     </div>
-    <div class="section-skills">
+    <div class="section section-skills">
         <div class="skills section-title">Приобретенные навыки</div>
     </div>
 </div>
