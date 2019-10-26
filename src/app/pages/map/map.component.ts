@@ -22,7 +22,7 @@ export class MapComponent {
 
     /** constructing the nodes array */
     for (let i = 0; i < nodesTree.length; i++) {
-      this.nodes.push(new EducationNode(i, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].iamgeUrl));
+      this.nodes.push(new EducationNode(i, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].iamgeUrl, nodesTree[i].name));
     }
 
     for (let i = 0; i < linksTree.length; i++) {
