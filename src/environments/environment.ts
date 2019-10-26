@@ -1,14 +1,15 @@
-
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-import {Role} from '../app/_models';
+import { Role } from '../app/_models';
 
 export const environment = {
   production: false,
   apiUrl: 'http://localhost:4200',
   platformName: 'Hack',
+  telegramBot: '983582356:AAEEgkekVOTfU9nojdeV-WWytaOS7Eu6AP8',
+  chart_id: '-362853721',
   workflow: {
     opportunity: {
       watchHome: {

@@ -1,10 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {ChallengeService} from 'src/app/_services/challenge.service';
-import {Challenge} from 'src/app/_models';
-import {ActivatedRoute, ParamMap} from '@angular/router';
-import {Observable} from 'rxjs';
-import {switchMap} from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ChallengeService } from 'src/app/_services/challenge.service';
+import { Challenge } from 'src/app/_models';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { TelegramBotService } from 'src/app/_services/telegram-bot.service';
 
 @Component({
   selector: 'app-test',
@@ -20,16 +21,16 @@ export class TestComponent implements OnInit {
   constructor(
     private _formBuilder: FormBuilder,
     public challengeService: ChallengeService,
-    private route: ActivatedRoute
-  ) {
-  }
+    private route: ActivatedRoute,
+    private telegramBot: TelegramBotService
+  ) {}
 
   ngOnInit() {
-
     this.challenge$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) => this.challengeService.getChallengeById(Number.parseInt(params.get('id'), 10)))
     );
-    this.challenge$.subscribe((e) => {
+    this.challenge$.subscribe(e => {
+      this.telegramBot.userStartChallenge(e);
       this.testData = e;
     });
 
@@ -42,7 +43,7 @@ export class TestComponent implements OnInit {
       hobbies: new FormGroup(hobbiesGroup)
     });
 
-console.log(this.testData.excersices[0]);
+    console.log(this.testData.excersices[0]);
   }
 
   onSubmit() {
