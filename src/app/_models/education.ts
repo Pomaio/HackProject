@@ -26,12 +26,13 @@ export class EducationNode implements d3.SimulationNodeDatum {
   imageUrl: string;
   linkCount = 0;
 
-  constructor(id, r, fontSize, imageUrl, name: string) {
+  constructor(id, name, r, fontSize, imageUrl, challengeId: number) {
     this.id = id;
+    this.name = name;
     this.r = r;
     this.fontSize = fontSize;
     this.imageUrl = imageUrl;
-    this.name = name;
+    this.chalengeId = challengeId;
   }
 
   // normal = () => {
