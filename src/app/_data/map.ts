@@ -2,9 +2,9 @@ import { links } from './map_links';
 
 const  font = 20;
 
-const max = {r: 100, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
-const medium = {r: 70, fontSize: font, iamgeUrl: 'assets/planets/mercury.svg', challengeId: 1};
-const min = {r: 40, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
+const max = {r: 250, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
+const medium = {r: 175, fontSize: font, iamgeUrl: 'assets/planets/mercury.svg', challengeId: 1};
+const min = {r: 125, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
 
 export const MAP_DEFAULT = {
   nodes: [
@@ -276,6 +276,118 @@ export const MAP_DEFAULT = {
     },
     {
       name: 'Основы Информатики',
+      ...medium
+    },
+    {
+      name: 'Устройства 1',
+      ...min
+    },
+    {
+      name: 'Устройства 2',
+      ...min
+    },
+    {
+      name: 'Устройства 3',
+      ...min
+    },
+    {
+      name: 'Основы Устройств',
+      ...medium
+    },
+    {
+      name: 'Физические Установки',
+      ...medium
+    },
+    {
+      name: 'Физические Установки 1',
+      ...min
+    },
+    {
+      name: 'Физические Установки 2',
+      ...min
+    },
+    {
+      name: 'Физические Установки 3',
+      ...min
+    },
+    {
+      name: 'Алгоритмы 1',
+      ...min
+    },
+    {
+      name: 'Алгоритмы 2',
+      ...min
+    },
+    {
+      name: 'Алгоритмы 3',
+      ...min
+    },
+    {
+      name: 'Основы Алгоритмов',
+      ...medium
+    },
+    {
+      name: 'Матанализ 1',
+      ...min
+    },
+    {
+      name: 'Матанализ 2',
+      ...min
+    },
+    {
+      name: 'Матанализ 3',
+      ...min
+    },
+    {
+      name: 'Основы Матанализа',
+      ...medium
+    },
+    {
+      name: 'Неорганическая химия 1',
+      ...min
+    },
+    {
+      name: 'Неорганическая химия 2',
+      ...min
+    },
+    {
+      name: 'Неорганическая химия 3',
+      ...min
+    },
+    {
+      name: 'Неорганическая химия 4',
+      ...min
+    },
+    {
+      name: 'Неорганическая химия 5',
+      ...min
+    },
+    {
+      name: 'Секреты неорганической химии',
+      ...medium
+    },
+    {
+      name: 'Органическая химия 1',
+      ...min
+    },
+    {
+      name: 'Органическая химия 2',
+      ...min
+    },
+    {
+      name: 'Органическая химия 3',
+      ...min
+    },
+    {
+      name: 'Органическая химия 4',
+      ...min
+    },
+    {
+      name: 'Органическая химия 5',
+      ...min
+    },
+    {
+      name: 'Секреты органической химии',
       ...medium
     },
   ],
