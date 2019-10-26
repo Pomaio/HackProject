@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageRoutingComponent } from './page-routing.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { TestComponent } from '../test/test.component';
-import { LandingComponent } from '../landing/landing.component';
+import { LandingComponent } from '../map/landing/landing.component';
 import { MapComponent } from '../map/map.component';
 import { RatingComponent } from '../rating/rating.component';
 

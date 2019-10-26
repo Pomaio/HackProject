@@ -22,7 +22,6 @@ export class MapComponent {
 
     /** constructing the nodes array */
     for (let i = 0; i < nodesTree.length; i++) {
-      console.log(nodesTree);
       this.nodes.push(new EducationNode(i, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].color));
     }
 
