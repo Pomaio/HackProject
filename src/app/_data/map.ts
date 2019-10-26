@@ -1,3 +1,5 @@
+import { links } from './map_links';
+
 const  font = 20;
 
 const max = {r: 100, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg'};
@@ -31,7 +33,7 @@ export const MAP_DEFAULT = {
       ...min
     },
     {
-      name: 'Основы математики',
+      name: 'Основы Математики',
       ...medium
     },
     {
@@ -80,85 +82,8 @@ export const MAP_DEFAULT = {
     },
     {
       name: 'Основы Геометрии',
-      ...min
+      ...medium
     }
   ],
-  links: [
-    {
-      source: 'Математика',
-      target: 'Математика 1'
-    },
-    {
-      source: 'Математика 1',
-      target: 'Математика 2'
-    },
-    {
-      source: 'Математика 2',
-      target: 'Математика 3'
-    },
-    {
-      source: 'Математика 3',
-      target: 'Математика 4'
-    },
-    {
-      source: 'Математика 3',
-      target: 'Математика 4'
-    },
-    {
-      source: 'Математика 4',
-      target: 'Математикв 5'
-    },
-    {
-      source: 'Математика 5',
-      target: 'Основы Математики'
-    },
-    {
-      source: 'Основы Математики',
-      target: 'Алгебра 1'
-    },
-    {
-      source: 'Алгебра 1',
-      target: 'Алгебра 2'
-    },
-    {
-      source: 'Алгебра 2',
-      target: 'Алгебра 3'
-    },
-    {
-      source: 'Алгебра 3',
-      target: 'Алгебра 4'
-    },
-    {
-      source: 'Алгебра 4',
-      target: 'Алгебра 5'
-    },
-    {
-      source: 'Алгебра 5',
-      target: 'Основы Алгебры'
-    },
-    {
-      source: 'Основы Математики',
-      target: 'Геометрия 1'
-    },
-    {
-      source: 'Геометрия 1',
-      target: 'Геометрия 2'
-    },
-    {
-      source: 'Геометрия 2',
-      target: 'Геометрия 3'
-    },
-    {
-      source: 'Геометрия 3',
-      target: 'Геометрия 4'
-    },
-    {
-      source: 'Геометрия 4',
-      target: 'Геометрия 5'
-    },
-    {
-      source: 'Геометрия 5',
-      target: 'Основы Геометрии'
-    }
-  ]
+  links
 };
