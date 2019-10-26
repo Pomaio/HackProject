@@ -9,13 +9,12 @@ import { TestComponent } from './test/test.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatButtonModule,
-  MatButtonToggleModule,
+  MatButtonToggleModule, MatCheckboxModule,
   MatFormFieldModule,
-  MatInputModule,
+  MatInputModule, MatRadioModule,
   MatStepperModule,
   MatTableModule
 } from '@angular/material';
-import { FormModule } from './test/form/form.module';
 import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 import { RatingComponent } from './rating/rating.component';
@@ -30,8 +29,9 @@ import { RatingComponent } from './rating/rating.component';
     MatStepperModule,
     MatFormFieldModule,
     MatInputModule,
+    MatCheckboxModule,
     MatButtonModule,
-    FormModule,
+    MatRadioModule,
     MapModule,
     PageRoutingModule,
     CarouselModule,

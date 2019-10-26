@@ -13,10 +13,12 @@
 .page__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
 }
 
+.cont{
+  flex: 1 1 0;
+}
 @media screen and (max-width: 1124px) {
   .app__container {
     padding: var(--app-medium-gap);

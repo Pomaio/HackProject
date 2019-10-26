@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-test',
@@ -8,17 +8,27 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class TestComponent implements OnInit {
   isLinear = false;
-  firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) {}
 
-  ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
-    });
-    this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
-    });
+  constructor(private _formBuilder: FormBuilder) {
+  }
+
+  profileForm = new FormGroup({
+    math: new FormControl('', [
+      Validators.required,
+    ]),
+    rush: new FormControl('', [
+      Validators.required,
+    ]),
+    physic: new FormControl('', [
+      Validators.required,
+    ]),
+  });
+
+  ngOnInit() {}
+
+
+  onSubmit() {
+    console.warn(this.profileForm.value);
   }
 }
