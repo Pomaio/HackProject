@@ -56,7 +56,7 @@ export class TestComponent implements OnInit {
         return el;
       }
       return res;
-    }, {}).result = this.testData.excersices.reduce((sum, el) => {
+    }, {} as any).result = this.testData.excersices.reduce((sum, el) => {
       if (el.rightAnswer === this.contactForm.value.hobbies[el.title]) {
         return sum += 10;
       }
