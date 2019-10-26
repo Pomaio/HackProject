@@ -17,7 +17,8 @@ const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
       { path: 'test/:id', component: TestComponent },
       { path: 'map', component: MapComponent },
-      { path: 'rate', component: RatingComponent }
+      { path: 'rate', component: RatingComponent },
+      { path: 'tasks', component: TasksComponent }
     ]
   }
 ];

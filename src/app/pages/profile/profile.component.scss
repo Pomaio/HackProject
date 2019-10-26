@@ -4,8 +4,7 @@ $gutter: 20px;
 $main-bg: #222329;
 $main-bg-light: lighten($main-bg, 60%);
 $content-bg: lighten($main-bg, 80%);
-$accent: #466cff;
-
+$accent: #3f51b5;
 
 // ------------------------ Styles ------------------------
 .grid-container {
@@ -38,7 +37,7 @@ $accent: #466cff;
     text-decoration: none;
     background-color: $accent;
     padding: 20px 60px;
-    border-radius: 2px;
+    border-radius: 3px;
 	text-align: center;
     position: relative;
     font-weight: bold;
@@ -52,7 +51,7 @@ $accent: #466cff;
         bottom: 0;
         width: 100%;
         background-color: darken($accent, 50%);
-        opacity: .18;
+        opacity: .15;
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
         left: 0;
@@ -63,16 +62,16 @@ $accent: #466cff;
         color: #fff;
     }
     &:hover {
-        background-color: lighten($accent, 2%);
+        background-color: lighten($accent, 3%);
         &::after {
-            opacity: .12;
+            opacity: .10;
         }
     }
     &:active {
-				background-color: darken($accent, 5%);
+				background-color: darken($accent, 3%);
 				outline: none;
         &::after {
-            opacity: .32;
+            opacity: .20;
         }
 	}
 }
@@ -136,7 +135,6 @@ $accent: #466cff;
         font-weight: bold;
     }
 }
-
 .achievements-content {
     margin: $gutter 0;
     width: 100%;

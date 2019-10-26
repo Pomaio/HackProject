@@ -1,7 +1,10 @@
 $header-background: #222329;
 $nav-text-color: white;
+$accent: #3f51b5;
+
 
 .link-holder {
+  border: 3px solid $header-background;
   min-height: 40px;
   align-items: center;
   display: flex;
@@ -15,12 +18,12 @@ $nav-text-color: white;
 }
 
 .link-holder:hover {
-  background: linear-gradient(rgba(73, 108, 255, 0.0) 90%, #466cff 95%);
+  border-bottom: 3px solid $accent;
   border-radius: 2px;
 }
 
 .link-holder__active {
-  background: linear-gradient(rgba(73, 108, 255, 0.0) 90%, #466cff 95%);
+  border-bottom: 3px solid $accent;
   border-radius: 2px;
 }
 
