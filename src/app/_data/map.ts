@@ -2,9 +2,9 @@ import { links } from './map_links';
 
 const  font = 20;
 
-const max = {r: 100, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg'};
-const medium = {r: 70, fontSize: font, iamgeUrl: 'assets/planets/mercury.svg'};
-const min = {r: 40, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg'};
+const max = {r: 100, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
+const medium = {r: 70, fontSize: font, iamgeUrl: 'assets/planets/mercury.svg', challengeId: 1};
+const min = {r: 40, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
 
 export const MAP_DEFAULT = {
   nodes: [
