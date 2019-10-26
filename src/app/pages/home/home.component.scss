@@ -1,0 +1,82 @@
+$accent: #3f51b5;
+$gutter: 30px;
+
+$main-bg: #222329;
+$content-bg: lighten($main-bg, 80%);
+
+.flex-container {
+    display: flex;
+}
+
+.button {
+    font-size: 20px;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: $accent;
+    padding: 20px 60px;
+    border-radius: 3px;
+	text-align: center;
+    position: relative;
+    font-weight: bold;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    &::after {
+        transition: background-color .2s ease;
+        position: absolute;
+        content: '';
+        height: 4px;
+        bottom: 0;
+        width: 100%;
+        background-color: darken($accent, 50%);
+        opacity: .15;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        left: 0;
+    }
+    &:focus, &:hover {
+        text-decoration: none;
+				outline: none;
+        color: #fff;
+    }
+    &:hover {
+        background-color: lighten($accent, 3%);
+        &::after {
+            opacity: .10;
+        }
+    }
+    &:active {
+				background-color: darken($accent, 3%);
+				outline: none;
+        &::after {
+            opacity: .20;
+        }
+	}
+}
+
+.button-wrapper {
+    padding-top: $gutter;
+    align-items: center;
+    justify-content: center;
+}
+.home-content {
+    flex-direction: column;
+    text-align: center;
+    color: $main-bg;
+    background-color: $content-bg;
+    min-height: 90%;
+}
+.header {
+    font-size: 40px;
+    padding: $gutter*2 0 $gutter;
+}
+.info {
+    font-size: 24px;
+    margin-bottom: $gutter;
+}
+.home-text {
+    font-size: 20px;
+    margin-bottom: $gutter/4;
+}

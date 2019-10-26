@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { ChallengeService } from 'src/app/_services/challenge.service';
-import { Challenge } from 'src/app/_models';
-import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
-import { TelegramBotService } from 'src/app/_services/telegram-bot.service';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {ChallengeService} from 'src/app/_services/challenge.service';
+import {Challenge} from 'src/app/_models';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {Observable} from 'rxjs';
+import {switchMap} from 'rxjs/operators';
+import {TelegramBotService} from 'src/app/_services/telegram-bot.service';
+import {MAP_DEFAULT} from '../../_data/map';
 
 @Component({
   selector: 'app-test',
@@ -19,18 +20,20 @@ export class TestComponent implements OnInit {
   contactForm;
 
   constructor(
+    public router: Router,
     private _formBuilder: FormBuilder,
     public challengeService: ChallengeService,
     private route: ActivatedRoute,
     private telegramBot: TelegramBotService
-  ) {}
+  ) {
+  }
 
   ngOnInit() {
     this.challenge$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) => this.challengeService.getChallengeById(Number.parseInt(params.get('id'), 10)))
     );
     this.challenge$.subscribe(e => {
-      this.telegramBot.userStartChallenge(e);
+      // this.telegramBot.userStartChallenge(e);
       this.testData = e;
     });
 
@@ -42,11 +45,23 @@ export class TestComponent implements OnInit {
     this.contactForm = this._formBuilder.group({
       hobbies: new FormGroup(hobbiesGroup)
     });
-
-    console.log(this.testData.excersices[0]);
   }
 
   onSubmit() {
-    console.warn(this.contactForm.value);
+    console.log(this.testData, MAP_DEFAULT.nodes[this.testData.id]);
+
+    // @ts-ignore
+    MAP_DEFAULT.nodes.reduce((res, el) => {
+      if (el.challengeId === this.testData.id) {
+        return el;
+      }
+      return res;
+    }, {}).result = this.testData.excersices.reduce((sum, el) => {
+      if (el.rightAnswer === this.contactForm.value.hobbies[el.title]) {
+        return sum += 10;
+      }
+      return sum;
+    }, 0);
+    this.router.navigate(['../../map']);
   }
 }

@@ -25,11 +25,12 @@ export class MapComponent {
       this.nodes.push(
         new EducationNode(
           i,
-          nodesTree[i].name,
           nodesTree[i].r,
           nodesTree[i].fontSize,
           nodesTree[i].iamgeUrl,
-          nodesTree[i].challengeId
+          nodesTree[i].name,
+          nodesTree[i].result,
+          nodesTree[i].challengeId,
         )
       );
     }

@@ -7,6 +7,8 @@ import { HeaderModule } from '../components/header/header.module';
 import { FooterModule } from '../components/footer/footer.module';
 import { TestComponent } from './test/test.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginModule } from './login/login.module';
+
 import {
   MatButtonModule,
   MatButtonToggleModule,
@@ -24,11 +26,10 @@ import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 import { RatingComponent } from './rating/rating.component';
 import { TasksComponent } from './tasks/tasks.component';
-import { ResultsComponent } from './results/results.component';
 import { HomeModule } from './home/home.module';
 
 @NgModule({
-  declarations: [ProfileComponent, TestComponent, PageRoutingComponent, RatingComponent, TasksComponent, ResultsComponent],
+  declarations: [ProfileComponent, TestComponent, PageRoutingComponent, RatingComponent, TasksComponent],
   imports: [
     CommonModule,
     HeaderModule,
@@ -47,9 +48,10 @@ import { HomeModule } from './home/home.module';
     MatTableModule,
     MatExpansionModule,
     MatProgressBarModule,
+    LoginModule,
     MatButtonToggleModule,
     HomeModule
   ],
   exports: [TestComponent]
 })
-export class PagesModule {}
+export class PagesModule { }

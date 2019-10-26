@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
     <svg:g
       [attr.transform]="'translate(' + node.x + ',' + node.y + ')'"
       (dblclick)="onDoubleClick($event)"
-      [matTooltip]="node.name + '// Кликните два раза для перехода на урок.'"
+      matTooltip="{{this.node.name}} // {{this.node.result}} баллов // Кликните два раза для перехода на урок."
     >
       <defs>
         <pattern [attr.id]="'pat' + node.id" [attr.x]="0" [attr.y]="0" width="100%" height="100%">

@@ -9,12 +9,22 @@ const min = {r: 40, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', cha
 export const MAP_DEFAULT = {
   nodes: [
     {
+      name: 'Старт',
+      result: null,
+      r: 175,
+      fontSize: 20,
+      iamgeUrl: 'assets/planets/jupitier.svg',
+      challengeId: 1
+    },
+    {
       name: 'Математика',
-      ...max
+      ...max,
+      challengeId: 2
     },
     {
       name: 'Математика 1',
-     ...min
+     ...min,
+      challengeId: 3
     },
     {
       name: 'Математика 2',
