@@ -2,175 +2,175 @@ export const MAP_DEFAULT = {
   nodes: [
     {
       name: 'Старт',
-      r: 75,
+      r: 175,
       fontSize: 20,
       iamgeUrl: 'assets/planets/jupitier.svg'
     },
     {
       name: 'Математика',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Математика 1',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Математика 2',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Математика 3',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Алгебра',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Алгебра 1',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Алгебра 2',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Алгебра 3',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Алгебра 4',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Геометрия',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Геометрия 1',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Геометрия 2',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Физика',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Химия',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Экономика',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Чистописание',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Чистописание 1',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Чистописание 2',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Чтение',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Философия',
-      r: 66,
+      r: 166,
       fontSize: 30,
       iamgeUrl: 'assets/planets/jupitier.svg'
     },
     {
       name: 'Чтение 1',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Чтение 2',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Русский язык',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Русский язык 1',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Русский язык 2',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Литература',
-      r: 62,
+      r: 162,
       fontSize: 20,
       iamgeUrl: 'assets/planets/venus.svg'
     },
     {
       name: 'Литература 1',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     },
     {
       name: 'Литература 2',
-      r: 44,
+      r: 144,
       fontSize: 20,
       iamgeUrl: 'assets/planets/mercury.svg'
     }
