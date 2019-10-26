@@ -10,7 +10,18 @@ import { Router } from '@angular/router';
       (dblclick)="onDoubleClick($event)"
       matTooltip="Кликните два раза для перехода на урок."
     >
-      <svg:circle class="node" [attr.fill]="node.color" cx="0" cy="0" [attr.r]="node.r"></svg:circle>
+      <defs>
+        <pattern id="pat" [attr.x]="-node.r" [attr.y]="-node.r" [attr.width]="node.r * 2" [attr.height]="node.r * 2">
+          <image
+            [attr.x]="-node.r"
+            [attr.y]="-node.r"
+            [attr.width]="node.r * 2"
+            [attr.height]="node.r * 2"
+            xlink:href="jupitier.svg"
+          ></image>
+        </pattern>
+      </defs>
+      <svg:circle class="node" fill="url('#pat')" cx="0" cy="0" [attr.r]="node.r"></svg:circle>
 
       <svg:text class="node-name" [attr.font-size]="node.fontSize">
         {{ node.id }}
