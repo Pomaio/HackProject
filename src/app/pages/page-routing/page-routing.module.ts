@@ -7,6 +7,7 @@ import { LandingComponent } from '../map/landing/landing.component';
 import { MapComponent } from '../map/map.component';
 import { RatingComponent } from '../rating/rating.component';
 import { TasksComponent } from '../tasks/tasks.component';
+import {ResultsComponent} from '../results/results.component';
 import { HomeComponent } from '../home/home.component';
 import { LoginComponent } from '../login/login.component';
 
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
       { path: 'test/:id', component: TestComponent },
       { path: 'map', component: MapComponent },
+      { path: 'results', component: ResultsComponent },
       { path: 'rate', component: RatingComponent },
       { path: 'tasks', component: TasksComponent },
       { path: 'login', component: LoginComponent }

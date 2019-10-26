@@ -26,8 +26,9 @@ export class EducationNode implements d3.SimulationNodeDatum {
   imageUrl: string;
   linkCount = 0;
 
-  constructor(id, r, fontSize, imageUrl, challengeId = 1) {
+  constructor(id, name, r, fontSize, imageUrl, challengeId: number) {
     this.id = id;
+    this.name = name;
     this.r = r;
     this.fontSize = fontSize;
     this.imageUrl = imageUrl;
@@ -76,5 +77,5 @@ export interface Excercise {
   title: string;
   question: string;
   answers: string[];
-  rightAnswer: string[];
+  rightAnswer: string;
 }
