@@ -177,10 +177,6 @@ export const MAP_DEFAULT = {
   ],
   links: [
     {
-      source: 'Старт',
-      target: 'Математика'
-    },
-    {
       source: 'Математика',
       target: 'Математика 1'
     },
@@ -194,22 +190,22 @@ export const MAP_DEFAULT = {
     },
     {
       source: 'Математика 3',
-      target: 'Алгебра'
+      target: 'Математика 4'
     },
     {
       source: 'Математика 3',
-      target: 'Геометрия'
+      target: 'Математика 4'
     },
     {
-      source: 'Геометрия',
-      target: 'Геометрия 1'
+      source: 'Математика 4',
+      target: 'Математикв 5'
     },
     {
-      source: 'Геометрия 1',
-      target: 'Геометрия 2'
+      source: 'Математика 5',
+      target: 'Основы Математики'
     },
     {
-      source: 'Алгебра',
+      source: 'Основы Математики',
       target: 'Алгебра 1'
     },
     {
@@ -225,32 +221,36 @@ export const MAP_DEFAULT = {
       target: 'Алгебра 4'
     },
     {
-      source: 'Алгебра 2',
-      target: 'Физика'
-    },
-    {
-      source: 'Алгебра 2',
-      target: 'Химия'
-    },
-    {
       source: 'Алгебра 4',
-      target: 'Экономика'
+      target: 'Алгебра 5'
     },
     {
-      source: 'Начало',
-      target: 'Чистописание'
+      source: 'Алгебра 5',
+      target: 'Основы Алгебры'
     },
     {
-      source: 'Чистописание',
-      target: 'Чистописание 1'
+      source: 'Основы Математики',
+      target: 'Геометрия 1'
     },
     {
-      source: 'Чистописание 1',
-      target: 'Чистописание 2'
+      source: 'Геометрия 1',
+      target: 'Геометрия 2'
     },
     {
-      source: 'Начало',
-      target: 'Чтение'
+      source: 'Геометрия 2',
+      target: 'Геометрия 3'
+    },
+    {
+      source: 'Геометрия 3',
+      target: 'Геометрия 4'
+    },
+    {
+      source: 'Геометрия 4',
+      target: 'Геометрия 5'
+    },
+    {
+      source: 'Геометрия 5',
+      target: 'Основы Геометрии'
     },
     {
       source: 'Чтение',
