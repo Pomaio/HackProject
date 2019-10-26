@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {ChallengeService} from 'src/app/_services/challenge.service';
 import {Challenge} from 'src/app/_models';
-import {ActivatedRoute, ParamMap} from '@angular/router';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {Observable} from 'rxjs';
 import {switchMap} from 'rxjs/operators';
 import {TelegramBotService} from 'src/app/_services/telegram-bot.service';
@@ -20,6 +20,7 @@ export class TestComponent implements OnInit {
   contactForm;
 
   constructor(
+    public router: Router,
     private _formBuilder: FormBuilder,
     public challengeService: ChallengeService,
     private route: ActivatedRoute,
@@ -61,5 +62,6 @@ export class TestComponent implements OnInit {
       }
       return sum;
     }, 0);
+    this.router.navigate(['../../map']);
   }
 }

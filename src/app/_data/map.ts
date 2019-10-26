@@ -14,15 +14,17 @@ export const MAP_DEFAULT = {
       r: 175,
       fontSize: 20,
       iamgeUrl: 'assets/planets/jupitier.svg',
-      challengeId: 2
+      challengeId: 1
     },
     {
       name: 'Математика',
-      ...max
+      ...max,
+      challengeId: 2
     },
     {
       name: 'Математика 1',
-     ...min
+     ...min,
+      challengeId: 3
     },
     {
       name: 'Математика 2',
