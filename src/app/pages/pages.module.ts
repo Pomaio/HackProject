@@ -24,11 +24,8 @@ import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 import { RatingComponent } from './rating/rating.component';
 import { TasksComponent } from './tasks/tasks.component';
-<<<<<<< HEAD
 import { ResultsComponent } from './results/results.component';
-=======
 import { HomeModule } from './home/home.module';
->>>>>>> 54245cab07f89dc210721cf3aa71224680f94687
 
 @NgModule({
   declarations: [ProfileComponent, TestComponent, PageRoutingComponent, RatingComponent, TasksComponent, ResultsComponent],
