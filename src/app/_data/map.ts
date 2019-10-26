@@ -193,10 +193,6 @@ export const MAP_DEFAULT = {
       target: 'Математика 4'
     },
     {
-      source: 'Математика 3',
-      target: 'Математика 4'
-    },
-    {
       source: 'Математика 4',
       target: 'Математикв 5'
     },
