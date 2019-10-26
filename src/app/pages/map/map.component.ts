@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { EducationNode, EducationLink } from 'src/app/_models';
+import {Component} from '@angular/core';
+import {EducationNode, EducationLink} from 'src/app/_models';
 import APP_CONFIG from 'src/app/app.config';
+import {MAP_DEFAULT} from '../../_data/map';
 
 @Component({
   selector: 'app-map',
@@ -12,13 +13,16 @@ export class MapComponent {
   links: EducationLink[] = [];
 
   constructor() {
+    const nodesTree = MAP_DEFAULT.nodes;
+    const linksTree = MAP_DEFAULT.links;
+
     const N = APP_CONFIG.N;
 
     const getIndex = number => number - 1;
 
     /** constructing the nodes array */
     for (let i = 1; i <= N; i++) {
-      this.nodes.push(new EducationNode(i));
+      this.nodes.push(new EducationNode(nodesTree[i].id, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].color));
     }
 
     for (let i = 1; i <= N; i++) {
