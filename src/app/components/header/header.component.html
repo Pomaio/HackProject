@@ -40,22 +40,25 @@
       </div>
 
       <span class="spacer"></span>
-      <button
+      <!-- <button
         class="link-holder  button nav__button"
         *ngIf="authService.currentUser$ | async; else login"
         mat-button
-        [matMenuTriggerFor]="menu"
+      > -->
+      <div
+        *ngIf="authService.currentUser$ | async; else login"
+        class="link-holder unselectable disable-selection-btn"
+        (click)="onLogout()"
       >
-        <div class="menu">
-          <div class="menu-icon"></div>
-          <div class="menu-text">Меню</div>
-        </div>
-      </button>
-      <mat-menu #menu="matMenu">
-        <!-- <button mat-menu-item routerLink="/balance">Личный кабинет</button>
-        <button mat-menu-item routerLink="/investment">Мои задачи</button> -->
+        <div class="login-btn__icon"></div>
+        <div class="login-btn__text">Выход</div>
+      </div>
+      <!-- </button> -->
+      <!-- <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/balance">Личный кабинет</button>
+        <button mat-menu-item routerLink="/investment">Мои задачи</button>
         <button mat-menu-item (click)="onLogout()">Выход</button>
-      </mat-menu>
+      </mat-menu> -->
       <ng-template #login>
         <div class="link-holder unselectable disable-selection-btn" [routerLink]="['/login']">
           <div class="login-btn__icon"></div>

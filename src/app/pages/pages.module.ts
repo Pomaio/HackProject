@@ -24,6 +24,7 @@ import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 import { RatingComponent } from './rating/rating.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [ProfileComponent, TestComponent, PageRoutingComponent, RatingComponent, TasksComponent],
@@ -45,7 +46,8 @@ import { TasksComponent } from './tasks/tasks.component';
     MatTableModule,
     MatExpansionModule,
     MatProgressBarModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    HomeModule
   ],
   exports: [TestComponent]
 })
