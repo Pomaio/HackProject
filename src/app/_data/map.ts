@@ -83,36 +83,9 @@ export const MAP_DEFAULT = {
     {
       name: 'Основы Геометрии',
       ...medium
-    },
-    {
-      name: 'Физика',
-      ...max
-    },
-    {
-      name: 'Физика 1',
-      ...min
-    },
-    {
-      name: 'Физика 2',
-      ...min
-    },
-    {
-      name: 'Физика 3',
-      ...min
-    },
-    {
-      name: 'Физика 4',
-      ...min
-    },
-    {
-      name: 'Физика 5',
-      ...min
-    },
-    {
-      name: 'Основы Физики',
-      ...medium
-    },
+    }
   ],
+
 
 
   links
