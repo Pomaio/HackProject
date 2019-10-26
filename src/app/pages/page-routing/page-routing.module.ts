@@ -6,6 +6,7 @@ import { TestComponent } from '../test/test.component';
 import { LandingComponent } from '../map/landing/landing.component';
 import { MapComponent } from '../map/map.component';
 import { RatingComponent } from '../rating/rating.component';
+import { TasksComponent } from '../tasks/tasks.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
       { path: 'test', component: TestComponent },
       { path: 'map', component: MapComponent },
-      {path: 'rate', component: RatingComponent}
+      {path: 'rate', component: RatingComponent},
+      {path: 'tasks', component: TasksComponent}
     ]
   }
 ];

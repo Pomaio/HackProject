@@ -1,0 +1,45 @@
+<div class="section section-skills">
+  <div class="skills section-title">Химия</div>
+  <mat-progress-bar mode="determinate" value="30"></mat-progress-bar>
+  <mat-expansion-panel *ngFor="let topic of topics">
+    <mat-expansion-panel-header>
+      {{topic.title}}
+    </mat-expansion-panel-header>
+
+    <p>{{topic.description}}</p>
+
+    <mat-action-row>
+      <button mat-button>Click me</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</div>
+<div class="section section-skills">
+  <div class="skills section-title">Физика</div>
+  <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+  <mat-expansion-panel *ngFor="let topic of topics">
+    <mat-expansion-panel-header>
+      {{topic.title}}
+    </mat-expansion-panel-header>
+
+    <p>{{topic.description}}</p>
+
+    <mat-action-row>
+      <button mat-button>Click me</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</div>
+<div class="section section-skills">
+  <div class="skills section-title">Математика</div>
+  <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+  <mat-expansion-panel *ngFor="let topic of topics">
+    <mat-expansion-panel-header>
+      {{topic.title}}
+    </mat-expansion-panel-header>
+
+    <p>{{topic.description}}</p>
+
+    <mat-action-row>
+      <button mat-button>Click me</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</div>

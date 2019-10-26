@@ -1,0 +1,37 @@
+$gutter: 20px;
+
+$main-bg: #222329;
+:host{
+  display: block;
+  padding: 20px 0;
+}
+
+.section {
+  margin-bottom: $gutter*2;
+  &_about-you {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &-title {
+    padding-bottom: $gutter;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    &:before, &:after {
+      content: '';
+      border-bottom: 2px solid $main-bg;
+      margin: auto 0;
+    }
+    &:before {
+      width: 50px;
+      margin-right: $gutter;
+    }
+    &:after {
+      flex-grow: 1;
+      margin-left: $gutter;
+    }
+  }
+}
+

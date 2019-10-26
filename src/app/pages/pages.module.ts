@@ -9,9 +9,9 @@ import { TestComponent } from './test/test.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatButtonModule,
-  MatButtonToggleModule,
+  MatButtonToggleModule, MatExpansionModule,
   MatFormFieldModule,
-  MatInputModule,
+  MatInputModule, MatPaginatorModule, MatProgressBarModule,
   MatStepperModule,
   MatTableModule
 } from '@angular/material';
@@ -19,9 +19,10 @@ import { FormModule } from './test/form/form.module';
 import { MapModule } from './map/map.module';
 import { CarouselModule } from '../components/carousel/carousel.module';
 import { RatingComponent } from './rating/rating.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 @NgModule({
-  declarations: [ProfileComponent, TestComponent, PageRoutingComponent,  RatingComponent],
+  declarations: [ProfileComponent, TestComponent, PageRoutingComponent,  RatingComponent, TasksComponent],
   imports: [
     CommonModule,
     HeaderModule,
@@ -36,7 +37,10 @@ import { RatingComponent } from './rating/rating.component';
     PageRoutingModule,
     CarouselModule,
     MatTableModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatExpansionModule
   ],
   exports: [TestComponent]
 })
