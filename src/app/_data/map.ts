@@ -1,3 +1,11 @@
+import { links } from './map_links';
+
+const  font = 20;
+
+const max = {r: 100, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
+const medium = {r: 70, fontSize: font, iamgeUrl: 'assets/planets/mercury.svg', challengeId: 1};
+const min = {r: 40, fontSize: font, iamgeUrl: 'assets/planets/jupitier.svg', challengeId: 1};
+
 export const MAP_DEFAULT = {
   nodes: [
     {
@@ -5,297 +13,209 @@ export const MAP_DEFAULT = {
       result: null,
       r: 175,
       fontSize: 20,
-      iamgeUrl: 'assets/planets/jupitier.svg'
+      iamgeUrl: 'assets/planets/jupitier.svg',
+      challengeId: 2
     },
     {
       name: 'Математика',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      ...max
     },
     {
       name: 'Математика 1',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+     ...min
     },
     {
       name: 'Математика 2',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      ...min
     },
     {
       name: 'Математика 3',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+     ...min
     },
     {
-      name: 'Алгебра',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Математика 4',
+      ...min
+    },
+    {
+      name: 'Математика 5',
+      ...min
+    },
+    {
+      name: 'Основы Математики',
+      ...medium
     },
     {
       name: 'Алгебра 1',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      ...min
     },
     {
       name: 'Алгебра 2',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+     ...min
     },
     {
       name: 'Алгебра 3',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      ...min
     },
     {
       name: 'Алгебра 4',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      ...min
     },
     {
-      name: 'Геометрия',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Алгебра 5',
+      ...min
+    },
+    {
+      name: 'Основы Алгебры',
+      ...medium
     },
     {
       name: 'Геометрия 1',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      ...min
     },
     {
       name: 'Геометрия 2',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      ...min
+    },
+    {
+      name: 'Геометрия 3',
+      ...min
+    },
+    {
+      name: 'Геометрия 4',
+      ...min
+    },
+    {
+      name: 'Геометрия 5',
+      ...min
+    },
+    {
+      name: 'Основы Геометрии',
+      ...medium
     },
     {
       name: 'Физика',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      ...max
     },
     {
-      name: 'Химия',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Физика 1',
+      ...min
     },
     {
-      name: 'Экономика',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      name: 'Физика 2',
+      ...min
     },
     {
-      name: 'Чистописание',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      name: 'Физика 3',
+      ...min
     },
     {
-      name: 'Чистописание 1',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Физика 4',
+      ...min
     },
     {
-      name: 'Чистописание 2',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Физика 5',
+      ...min
     },
     {
-      name: 'Чтение',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Основы Физики',
+      ...medium
     },
     {
-      name: 'Философия',
-      r: 166,
-      fontSize: 30,
-      iamgeUrl: 'assets/planets/jupitier.svg'
+      name: 'Динамика 1',
+      ...min
     },
     {
-      name: 'Чтение 1',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Динамика 2',
+      ...min
     },
     {
-      name: 'Чтение 2',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Динамика 3',
+      ...min
     },
     {
-      name: 'Русский язык',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      name: 'Динамика 4',
+      ...min
     },
     {
-      name: 'Русский язык 1',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      name: 'Динамика 5',
+      ...min
     },
     {
-      name: 'Русский язык 2',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      name: 'Основы Динамики',
+      ...medium
     },
     {
-      name: 'Литература',
-      r: 162,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/venus.svg'
+      name: 'Термодинамика 1',
+      ...min
     },
     {
-      name: 'Литература 1',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
+      name: 'Термодинамика 2',
+      ...min
     },
     {
-      name: 'Литература 2',
-      r: 144,
-      fontSize: 20,
-      iamgeUrl: 'assets/planets/mercury.svg'
-    }
+      name: 'Термодинамика 3',
+      ...min
+    },
+    {
+      name: 'Термодинамика 4',
+      ...min
+    },
+    {
+      name: 'Термодинамика 5',
+      ...min
+    },
+    {
+      name: 'Основы Термодинамики',
+      ...medium
+    },
+    {
+      name: 'Электромагнитизм 1',
+      ...min
+    },
+    {
+      name: 'Электромагнитизм 2',
+      ...min
+    },
+    {
+      name: 'Электромагнитизм 3',
+      ...min
+    },
+    {
+      name: 'Электромагнитизм 4',
+      ...min
+    },
+    {
+      name: 'Электромагнитизм 5',
+      ...min
+    },
+    {
+      name: 'Основы Электромагнитизма',
+      ...medium
+    },
+    {
+      name: 'Оптика 1',
+      ...min
+    },
+    {
+      name: 'Оптика 2',
+      ...min
+    },
+    {
+      name: 'Оптика 3',
+      ...min
+    },
+    {
+      name: 'Оптика 4',
+      ...min
+    },
+    {
+      name: 'Оптика 5',
+      ...min
+    },
+    {
+      name: 'Основы Оптики',
+      ...medium
+    },
   ],
-  links: [
-    {
-      source: 'Старт',
-      target: 'Математика'
-    },
-    {
-      source: 'Математика',
-      target: 'Математика 1'
-    },
-    {
-      source: 'Математика 1',
-      target: 'Математика 2'
-    },
-    {
-      source: 'Математика 2',
-      target: 'Математика 3'
-    },
-    {
-      source: 'Математика 3',
-      target: 'Алгебра'
-    },
-    {
-      source: 'Математика 3',
-      target: 'Геометрия'
-    },
-    {
-      source: 'Геометрия',
-      target: 'Геометрия 1'
-    },
-    {
-      source: 'Геометрия 1',
-      target: 'Геометрия 2'
-    },
-    {
-      source: 'Алгебра',
-      target: 'Алгебра 1'
-    },
-    {
-      source: 'Алгебра 1',
-      target: 'Алгебра 2'
-    },
-    {
-      source: 'Алгебра 2',
-      target: 'Алгебра 3'
-    },
-    {
-      source: 'Алгебра 3',
-      target: 'Алгебра 4'
-    },
-    {
-      source: 'Алгебра 2',
-      target: 'Физика'
-    },
-    {
-      source: 'Алгебра 2',
-      target: 'Химия'
-    },
-    {
-      source: 'Алгебра 4',
-      target: 'Экономика'
-    },
-    {
-      source: 'Начало',
-      target: 'Чистописание'
-    },
-    {
-      source: 'Чистописание',
-      target: 'Чистописание 1'
-    },
-    {
-      source: 'Чистописание 1',
-      target: 'Чистописание 2'
-    },
-    {
-      source: 'Начало',
-      target: 'Чтение'
-    },
-    {
-      source: 'Чтение',
-      target: 'Чтение 1'
-    },
-    {
-      source: 'Чтение 1',
-      target: 'Чтение 2'
-    },
-    {
-      source: 'Чтение 2',
-      target: 'Литература'
-    },
-    {
-      source: 'Литература',
-      target: 'Литература 1'
-    },
-    {
-      source: 'Литература 1',
-      target: 'Литература 2'
-    },
-    {
-      source: 'Чтение 2',
-      target: 'Русский язык'
-    },
-    {
-      source: 'Чистописание 2',
-      target: 'Русский язык'
-    },
-    {
-      source: 'Русский язык',
-      target: 'Русский язык 1'
-    },
-    {
-      source: 'Русский язык 1',
-      target: 'Русский язык 2'
-    },
-    {
-      source: 'Русский язык 2',
-      target: 'Философия'
-    },
-    {
-      source: 'Экономика',
-      target: 'Философия'
-    }
-  ]
+  links
 };

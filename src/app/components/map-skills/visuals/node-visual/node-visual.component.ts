@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
       (dblclick)="onDoubleClick($event)"
       matTooltip="{{this.node.name}} // {{this.node.result}} баллов // Кликните два раза для перехода на урок."
     >
-      <defs> 
+      <defs>
         <pattern [attr.id]="'pat' + node.id" [attr.x]="0" [attr.y]="0" width="100%" height="100%">
           <image
             xmlns:xlink="http://www.w3.org/1999/xlink"

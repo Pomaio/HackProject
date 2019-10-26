@@ -44,16 +44,22 @@ export class TestComponent implements OnInit {
     this.contactForm = this._formBuilder.group({
       hobbies: new FormGroup(hobbiesGroup)
     });
-
-    console.log(this.testData.excersices[0]);
   }
 
   onSubmit() {
-    MAP_DEFAULT.nodes[0].result = this.testData.excersices.reduce((sum, el) => {
-        if (el.rightAnswer === this.contactForm.value.hobbies[el.title]) {
-          return sum += 10;
-        }
-        return sum;
-      }, 0);
+    console.log(this.testData, MAP_DEFAULT.nodes[this.testData.id]);
+
+    // @ts-ignore
+    MAP_DEFAULT.nodes.reduce((res, el) => {
+      if (el.challengeId === this.testData.id) {
+        return el;
+      }
+      return res;
+    }, {}).result = this.testData.excersices.reduce((sum, el) => {
+      if (el.rightAnswer === this.contactForm.value.hobbies[el.title]) {
+        return sum += 10;
+      }
+      return sum;
+    }, 0);
   }
 }

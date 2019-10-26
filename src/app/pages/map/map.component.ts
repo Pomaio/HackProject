@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {EducationNode, EducationLink} from 'src/app/_models';
+import { Component } from '@angular/core';
+import { EducationNode, EducationLink } from 'src/app/_models';
 import APP_CONFIG from 'src/app/app.config';
-import {MAP_DEFAULT} from '../../_data/map';
+import { MAP_DEFAULT } from '../../_data/map';
 
 @Component({
   selector: 'app-map',
@@ -22,11 +22,20 @@ export class MapComponent {
 
     /** constructing the nodes array */
     for (let i = 0; i < nodesTree.length; i++) {
-      this.nodes.push(new EducationNode(i, nodesTree[i].r, nodesTree[i].fontSize, nodesTree[i].iamgeUrl, nodesTree[i].name, nodesTree[i].result));
+      this.nodes.push(
+        new EducationNode(
+          i,
+          nodesTree[i].r,
+          nodesTree[i].fontSize,
+          nodesTree[i].iamgeUrl,
+          nodesTree[i].name,
+          nodesTree[i].result,
+          nodesTree[i].challengeId,
+        )
+      );
     }
 
     for (let i = 0; i < linksTree.length; i++) {
-
       /** increasing connections toll on connecting nodes */
       const sourceID = nodesTree.reduce((res, el, index) => {
         if (el.name === linksTree[i].source) {
@@ -44,6 +53,5 @@ export class MapComponent {
       /** connecting the nodes before starting the simulation */
       this.links.push(new EducationLink(sourceID, targetID));
     }
-
   }
 }

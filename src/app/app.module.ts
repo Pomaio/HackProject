@@ -14,7 +14,6 @@ import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
 import { MapSkillsModule } from './components/map-skills/map-skills.module';
 
-import { LoginModule } from './pages/login/login.module';
 import { PagesModule } from './pages/pages.module';
 import { JwtInterceptor, ErrorInterceptor, fakeBackendProvider } from './_helpers';
 
@@ -26,7 +25,6 @@ registerLocaleData(localeRu, 'ru');
     BrowserModule,
     HeaderModule,
     FooterModule,
-    LoginModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
@@ -44,4 +42,4 @@ registerLocaleData(localeRu, 'ru');
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
